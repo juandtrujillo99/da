@@ -1,0 +1,41 @@
+.bg-cover{
+    display: inline-block;
+    background-size: cover;/* sirve para que la imagen ocupe el ancho del contenedor */
+}
+
+.img-profile{
+    box-shadow: 0px 0px 0px .5em white;
+    /*border-radius: 1em; un detallito que me parecio cool pero luego lo cambie, lo dejo comentado por si deseas utilizarlo */
+    width: 10em;/* aqui estan el alto y el ancho de la imagen */
+    height: 10em; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
+    background-position: center top;/* determina la posicion de la imagen */
+}
+
+.img-profile-flag{
+    /*border-radius: 1em; un detallito que me parecio cool pero luego lo cambie, lo dejo comentado por si deseas utilizarlo */
+    width: 2.5em;/* aqui estan el alto y el ancho de la imagen */
+    height: 2.5em; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
+    background-position: center center;/* determina la posicion de la imagen */
+    top: 2.5em;
+    left: 7em;
+    position: absolute;
+}
+
+
+.img-profile-flag-m{
+    /*border-radius: 1em; un detallito que me parecio cool pero luego lo cambie, lo dejo comentado por si deseas utilizarlo */
+    width: 2.5em;/* aqui estan el alto y el ancho de la imagen */
+    height: 2.5em; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
+    background-position: center center;/* determina la posicion de la imagen */
+    top: 2.5em;
+    left: 13em;
+    position: absolute;
+}
+
+
+.img-entrada{
+    width: 100%;/* aqui estan el alto y el ancho de la imagen */
+    height: 45vh; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
+    background-position: top center;/* determina la posicion de la imagen */
+    background-size: cover;
+}
