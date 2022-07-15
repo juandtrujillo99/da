@@ -41,6 +41,8 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
           </ul>
           <a href="<?php echo RUTA_ABOUT;?>">Sobre mi</a>
           <br>
+          <a href="<?php echo RUTA_BLOG;?>">Blog</a>
+          <br>
           <a href="<?php echo SERVIDOR;?>#contacto-m">Contacto</a>
           <br><br>
           <p style="font-size: 1.2em;letter-spacing: .05em;">Sígueme</p>
@@ -109,6 +111,8 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
           </li>
         </ul>
         <a href="<?php echo RUTA_ABOUT;?>">Sobre mi</a>
+        <br>
+        <a href="<?php echo RUTA_BLOG;?>">Blog</a>
         <br>
         <a href="<?php echo SERVIDOR;?>#contacto-m">Contacto</a>
         <br><br>

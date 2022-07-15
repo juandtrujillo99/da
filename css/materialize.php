@@ -5249,10 +5249,7 @@ small {
 }
 
 .btn, .btn-large, .btn-small {
-  text-decoration: none;
-  color: #fff;
-  background-color: <?php echo $colorMarca;?>;
-  text-align: center;
+  text-decoration: none; text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
@@ -5260,7 +5257,6 @@ small {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: <?php echo $colorMarca;?>;
 }
 
 .btn-floating {

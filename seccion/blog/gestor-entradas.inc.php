@@ -3,22 +3,21 @@
 	<div class="col-12" style="padding: 0 0 1.5em 0;">
 		<h1 class="textoBlack textoTitulo text-center"><?php echo $titulo ?></h1>
 	</div>
-	<div class="col-2"></div>
-	<div class="col-9">
-		<br>
-		<a href="<?php echo RUTA_NUEVA_ENTRADA_BLOG; ?>" class="btn btn-principal-animado" role="button" id="boton-nueva-entrada">Crear nueva entrada</a>
-		<a href="<?php echo RUTA_BLOG; ?>" class="btn btn-principal-animado" role="button" id="boton-nueva-entrada">Ver newsletter</a>
-		<br><br><hr><br>
-		<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-9 row">
+		<div class="col-7 col-md-3 center-align"><a href="<?php echo RUTA_NUEVA_ENTRADA_BLOG; ?>" class="btn btn-principal-animado" id="boton-nueva-entrada">Nueva entrada</a></div>
+		<div class="col-5 col-md-2 center-align"><a href="<?php echo RUTA_BLOG; ?>" class="btn btn-principal-animado" id="boton-nueva-entrada">Ver blog</a></div>
+		<div class="col-12"><br><hr></div>
+		<div>
 			<?php 
 				if (count($array_entradas) > 0) {
 					?>
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th>Fecha de creación</th>
-								<th>Título</th>
-								<th>Categoría</th>
+								<th></th>
+								<th>Título de la entrada</th>
+								<th></th>
 								<th></th>
 								<th></th>
 								<th></th>
@@ -31,9 +30,9 @@
 								$comentarios_entrada_actual = $array_entradas[$i][1];
 								?>								
 								<tr>										
-									<td><?php echo convertirFecha($entrada_actual -> obtener_fecha()); ?></td>
+									<td></td>
 									<td><a target="_blank" href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada_actual -> obtener_url(); ?>"><?php echo $entrada_actual -> obtener_titulo(); ?></a></td>									
-									<td><?php echo $entrada_actual -> obtener_etiqueta(); ?></td>	
+									<td></td>	
 									<td></td>					
 									<td>
 										<form method="post" action="<?php echo RUTA_EDITAR_ENTRADA_BLOG; ?>">

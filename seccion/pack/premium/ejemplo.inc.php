@@ -108,7 +108,7 @@
 
 			<div class="col-12 row">
 
-				<h3 class="texto2Black" style="font-size: 1.5em;margin-top: 1.5em;margin-bottom: 1.5em;">Hecho en DareAds</h3>
+				<h3 class="texto2Black" style="font-size: 1.5em;margin-top: 1.5em;margin-bottom: 1.5em;">mira algunos ejemplos</h3>
 
 			</div>
 

@@ -74,10 +74,7 @@ include_once 'seccion/doc-navbar.inc.php';
         </div> 
 	</div>
 	<div class="col-12 row">
-		<div class="col-1"></div>
-		<div class="col-10 row">
-			<?php EscritorEntradasBlog::escribir_entradas(); ?>
-		</div>
+		<?php EscritorEntradasBlog::escribir_entradas(); ?>
 	</div>
 </div>
 

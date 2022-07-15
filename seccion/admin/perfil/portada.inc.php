@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-1 d-block d-sm-none"></div>
-    <div align="center" class="col-10 col-md-12 bg-cover sombra" style="background-position: center 30%;background-image: url(<?php echo RUTA_IMG_OPTIMIZADA;?>31.webp);">
+    <div align="center" class="col-12 bg-cover sombra" style="background-position: center 30%;background-image: url(<?php echo RUTA_IMG_OPTIMIZADA;?>31.webp);">
         <div class="valign-wrapper row">
             <div class="d-none d-sm-block" style="height: 50vh;"></div>
             <div class="d-block d-sm-none" style="height: 30vh;"></div>          
@@ -10,8 +10,8 @@
 
 
 
-    <div class="col-1 col-md-4"></div>
-    <div class="col-10 col-md-4 row" align="center">
+    <div class="col-4"></div>
+    <div class="col-12 col-md-4 row" align="center">
 
         <div id="actualizar" class="modal bottom-sheet col-12 col-md-12" style="height:35vh">    
             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat white-text" style="position: absolute;right: 0;background-color: black;padding: .05em 2.5em;">X</a>

@@ -85,13 +85,6 @@ background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMa
 background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMarca;?> 50%, <?php echo $colorMarca;?> 100%);}
 
 
-.btn:focus, .btn-large:focus,
-.btn-floating:focus {
-  background-color: #0d0d0d;
-  color: #fff;
-}
-
-
 .imagen{max-width: 100%;width: 100%}
 .imagen-2{max-width: 50%;width: 50%}
 .imagen-3{max-width: 33.3%;width: 33.3%}

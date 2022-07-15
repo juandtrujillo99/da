@@ -45,12 +45,10 @@ include_once 'seccion/doc-navbar.inc.php';
 	<div class="row">
 		<div class="col-md-2 d-none d-sm-block"></div>	
 		<div class="col-md-10 col-12 row">
-			<div class="col-1"></div>
-			<div class="col-11">
 				<?php
 				include_once 'seccion/admin/perfil/portada.inc.php';
 				?>  
-				<div class="row perfil" style="padding: 4em 2em;">
+				<div class="row perfil" style="padding: 4em 2em 4em 10em;">
 				    <div class="col-12 col-md-6 row textoParrafo center-align valign-wrapper">
 				        <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG; ?>" class="col-12" style="padding:.5em 0">
 				            <p class="btn-principal"><i style="padding:1em 0" class="fa-solid fa-pen-to-square"></i> Gestionar blog</p>
@@ -61,14 +59,13 @@ include_once 'seccion/doc-navbar.inc.php';
 				    </div>
 			   	 	<div class="d-none d-sm-block col-md-1"></div>
 				    <div class="col-12 col-md-5">   
-				    	<div class="d-block d-sm-none"><br></div>	
+				    	<div class="d-block d-sm-none"><br><br><br></div>	
 				        <?php include_once 'seccion/admin/perfil/datos.inc.php';?>
 				    </div>
 				</div>
 				<?php 
 				include_once 'seccion/copyright.inc.php';
 				?>
-			</div>
 		</div>
 	</div>	
 </div>

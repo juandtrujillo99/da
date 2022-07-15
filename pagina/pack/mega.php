@@ -19,6 +19,7 @@ include_once 'seccion/doc-navbar.inc.php';
 <?php //body ?>
 <div class="container-fluid">
 	<div class="row">
+		<div class="d-none d-sm-block" style="padding-top: 4em;"></div>
 		<?php 
 		include 'seccion/pack/mega/portada.inc.php';
 		include 'seccion/pack/mega/ejemplo.inc.php';
