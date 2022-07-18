@@ -71,29 +71,29 @@
 			    <div class="card-content lighten-4">
 			    	<a href="<?php echo RUTA_OFFLINE;?>">
 						<div id="offline">
-							<img loading="lazy" alt="Diseño digital de volantes y folletos" src="<?php echo RUTA_IMG;?>fondos/10.webp" class="imagen">
+							<img loading="lazy" alt="Diseño digital de volantes y folletos" src="<?php echo RUTA_IMG_OPTIMIZADA;?>2.webp" class="imagen">
 							<br><br>
-							<p style="font-size:1.2em;" class="texto2Black">Te ayudo a diseñar el Logo ideal, tarjetas de presentación o invitaciones y folletos publicitarios.</p>
+							<p style="font-size:1.2em;" class="textoBold">Te ayudo a diseñar el Logo ideal, tarjetas de presentación o invitaciones y folletos publicitarios.</p>
 							<br>
-							<p class="btn btn-principal">Saber más</p>
+							<p class="btn btn-principal-animado">Saber más</p>
 						</div>
 					</a>
 					<a href="<?php echo RUTA_PACKS;?>">
 						<div id="packs">
-							<img loading="lazy" alt="Asesoría en redes sociales" src="<?php echo RUTA_IMG;?>fondos/12.webp" class="imagen">
+							<img loading="lazy" alt="Asesoría en redes sociales" src="<?php echo RUTA_IMG_OPTIMIZADA;?>12.webp" class="imagen">
 							<br><br>
-							<p style="font-size:1.2em;" class="texto2Black">¿No sabes qué vas a publicar mañana? Déjamelo a mi, yo me encargo de crear el contenido y tú lo publicas.</p>
+							<p style="font-size:1.2em;" class="textoBold">¿No sabes qué vas a publicar mañana? Déjamelo a mi, yo me encargo de crear el contenido y tú lo publicas.</p>
 							<br>
-							<p class="btn btn-principal">Saber más</p>
+							<p class="btn btn-principal-animado">Saber más</p>
 						</div>
 					</a>
 					<a href="<?php echo RUTA_ONLINE;?>">
 						<div id="online">
-							<img loading="lazy" alt="Creación de sitios web y gestión de redes sociales" src="<?php echo RUTA_IMG;?>fondos/15.webp" class="imagen">
+							<img loading="lazy" alt="Creación de sitios web y gestión de redes sociales" src="<?php echo RUTA_IMG_OPTIMIZADA;?>33.webp" class="imagen">
 							<br><br>
-							<p style="font-size:1.2em;" class="texto2Black">Puedo crearte un sitio web único y muy atractivo para potenciar tu marca o si prefieres puedo gestionar las redes sociales y te enseño a pautar online.</p>
+							<p style="font-size:1.2em;" class="textoBold">Puedo crearte un sitio web único y muy atractivo para potenciar tu marca o si prefieres puedo gestionar las redes sociales y te enseño a pautar online.</p>
 							<br>
-							<p class="btn btn-principal">Saber más</p>
+							<p class="btn btn-principal-animado">Saber más</p>
 						</div>
 					</a>
 			    </div>
