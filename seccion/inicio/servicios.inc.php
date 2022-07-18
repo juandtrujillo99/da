@@ -14,7 +14,7 @@
 			<a href="<?php echo RUTA_OFFLINE;?>">
 				<div class="col-12 row bordeadoNegro2 anime-4">
 				    <div class="col-12">
-				    	<div class="img-profile bg-cover circle" style="background-position: center left;background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG;?>fondos/10.webp"></div>
+				    	<div class="img-profile bg-cover circle" style="background-position: center left;background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA?>2.webp"></div>
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Offline</h5>
@@ -26,7 +26,7 @@
 			<a href="<?php echo RUTA_ONLINE;?>">
 				<div class="col-12 row bordeadoNegro2 anime-4a">
 				    <div class="col-12">
-				    	<div class="img-profile bg-cover circle" style="background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG;?>fondos/15.webp"></div>
+				    	<div class="img-profile bg-cover circle" style="background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>12.webp"></div>
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Online</h5>
@@ -38,7 +38,7 @@
 			<a href="<?php echo RUTA_PACKS;?>">
 				<div class="col-12 row bordeadoNegro2 anime-4b">
 				    <div class="col-12">
-				    	<div class="img-profile bg-cover circle" style="background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG;?>fondos/12.webp"></div>
+				    	<div class="img-profile bg-cover circle" style="background-color: black;margin-top: -2em;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>33.webp"></div>
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Packs</h5>

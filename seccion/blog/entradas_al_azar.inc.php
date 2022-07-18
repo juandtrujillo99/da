@@ -2,12 +2,7 @@
 include_once 'app/blog/EscritorEntradas.inc.php';
 ?>
 
-<div class="row">
-	<div class="col-12">
-		<hr>
-		<h3 class="textoBold center-align" style="padding: 1em 0;">Mira más contenido</h3>
-	</div>
-	
+<div class="row">	
 	<?php
 		for ($i = 0; $i < count($entradas_azar); $i++) {
 			$entrada_actual = $entradas_azar[$i];

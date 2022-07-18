@@ -21,11 +21,14 @@
 <div class="d-block d-sm-none">
 	<div class="col-12 row" id="inicio-m">
 		<div style="background: linear-gradient(to right, rgba(148,0,0,1) 0%, rgba(229,45,39,1) 100%); padding: .5em;"></div>
-	    <img loading="lazy" src="<?php echo RUTA_IMG_OPTIMIZADA; ?>portada-inicio.webp" class="imagen">		
+		<div class="col-1"></div>
+		<div class="col-10">
+			<img loading="lazy" src="<?php echo RUTA_IMG_OPTIMIZADA; ?>portada-inicio.webp" class="imagen">
+		</div>	    		
 	    <div class="row">
 	        <div class="col-1"></div>
 	        <div class="col-10">
-	            <h1 style="font-size: 3em;padding: .5em 0;" class="textoBlack">Permítele a tus clientes descubrirte</h1>
+	            <h1 style="font-size: 3em;padding: .8em 0 .5em 0;" class="textoBlack">Permítele a tus clientes descubrirte</h1>
 	            <p style="font-size: 1.3em;padding: 0em 0 1.5em 0;">Mejorar la identidad digital es el primer paso para llegar a ser reconocidos como los mejores.</p>
 	            <a href="<?php echo RUTA_ABOUT;?>" class="btn btn-principal-animado" style="font-size: 1.2em;">Quiero saber más</a>
 	            <br><br><br>
