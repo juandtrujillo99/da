@@ -105,7 +105,7 @@ include_once 'seccion/doc-navbar.inc.php';
 							<p>
 								Me apasiona crear contenido digital para redes sociales de gimnasios y preparadores físicos porque el ejercicio me cambió la vida. Combinar mis dos amores me mantiene motivado trabajando sin sentir que lo estoy haciendo.
 								<br><br>
-								<b>- Juan David Trujillo Reyes, Diseñador, community manager y creador de contenido.</b>
+								<b>- Juan David, Diseñador, community manager y creador de contenido.</b>
 							</p>
 						</div>
 					</div>
@@ -175,7 +175,7 @@ include_once 'seccion/doc-navbar.inc.php';
 		            <br>
 		            <p class="bordeadoRojo anime-3" style="font-size: 1.3em; padding:2em; margin-top: -3em;position: relative;">Me apasiona crear contenido digital para redes sociales de gimnasios y preparadores físicos porque el ejercicio me cambió la vida. Combinar mis dos amores me mantiene motivado trabajando sin sentir que lo estoy haciendo.
 		            <br><br>
-		            <b>- Juan David Trujillo Reyes, Diseñador, community manager y creador de contenido.</b>
+		            <b>- Juan David, Diseñador, community manager y creador de contenido.</b>
 		            </p>
 			    </div>
 			</div>
@@ -183,10 +183,6 @@ include_once 'seccion/doc-navbar.inc.php';
 				<br><br><br>
 			</div>
 		</div>
-		
-
-
-
 	</div>
 </div>
 <?php //body ?>
