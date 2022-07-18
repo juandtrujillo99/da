@@ -40,33 +40,37 @@ include_once 'seccion/doc-navbar.inc.php';
     <div class="row">
         <div class="col-12 col-md-6 bg-cover" style="background-image: url(<?php echo RUTA_BLOG_COVER;?><?php echo $entrada -> obtener_imagen(); ?>) ;">
             <div class="row">
-                <div class="d-none d-sm-block section"></div>
+                <div class="d-none d-sm-block section" style="background-color: rgba(0, 0, 0, .7);"></div>
                 <div class="d-block d-sm-none" style="height: 50vh;"></div>
             </div>
         </div>
-        <div class="col-6" style="height: 100vh;position: absolute;right: 0;overflow-y: scroll;padding: 3em 4em; scroll-behavior: smooth;">
+        <?php //para pc ?>
+        <div class="col-6 d-none d-sm-block" style="height: 100vh;position: absolute;right: 0;overflow-y: scroll;padding: 3em 4em; scroll-behavior: smooth;">
             <h1 class="textoBlack"><?php echo $entrada -> obtener_titulo(); ?></h1>
             <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
-            <?php if ((($entrada -> obtener_url_externa()) == "")) {
-                ?><br><br><?php
-            }else{
-                ?><br><br><?php
-                echo $entrada -> obtener_url_externa();
-                ?><br><br><?php
-            }
-            ?>                 
+            <br><br>
             <p align="justify"><?php echo nl2br($entrada -> obtener_texto()); ?></p>      
             <br><br>
             <div class="sharethis-inline-share-buttons"></div>
         </div>
-        <div class="col-12 row" style="background-color: #0d0d0d; color: white;">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="-69nWccB" data-limit="5" data-color="000"></script>
-                <br><br>
-                <?php
-                    include_once 'seccion/blog/entradas_al_azar.inc.php';
-                ?>
+        <?php //para moviles ?>
+        <div class="col-12 d-block d-sm-none" style="overflow-y: scroll;padding: 3em 4em; scroll-behavior: smooth;">
+            <h1 class="textoBlack"><?php echo $entrada -> obtener_titulo(); ?></h1>
+            <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
+            <br><br>
+            <p align="justify"><?php echo nl2br($entrada -> obtener_texto()); ?></p>      
+            <br><br>
+            <div class="sharethis-inline-share-buttons"></div>
+            <br><br>
+            <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="-69nWccB" data-limit="5" data-color="000"></script>
+        </div>
+        <div class="col-12" style="background-color: #0d0d0d; color: white;">
+            <br>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-12">
+                    <?php include_once 'seccion/blog/entradas_al_azar.inc.php';?>
+                </div>
             </div>
         </div>
     </div>

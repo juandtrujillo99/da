@@ -5,7 +5,7 @@
 		<div class="col-3 section center-align valign-wrapper">
 			<div class="col-12 bordeadoBlanco anime-1a" align="center" style="position: relative;">
 				<br><br><br>
-				<h6 style="font-size: 3em;padding: 1.3em 0;" class="textoBlack">¿Cómo puedes<br> ayudarme?</h6>
+				<h6 style="font-size: 3em;padding: 1.3em 0;" class="textoBlack">Encuentra la <br>solución de <br>tu problema</h6>
 				<br><br>
 			</div>
 		</div>

@@ -35,7 +35,7 @@
 
 .img-entrada{
     width: 100%;/* aqui estan el alto y el ancho de la imagen */
-    height: 45vh; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
+    height: 40vh; /* deben ser iguales con el objetivo de que sea un cuadrado la foto de perfil */
     background-position: top center;/* determina la posicion de la imagen */
     background-size: cover;
 }
