@@ -54,11 +54,10 @@ include_once 'seccion/doc-navbar.inc.php';
             <div class="sharethis-inline-share-buttons"></div>
         </div>
         <?php //para moviles ?>
-        <div class="col-12 d-block d-sm-none" style="overflow-y: scroll;padding: 3em 4em; scroll-behavior: smooth;">
-            <h1 class="textoBlack"><?php echo $entrada -> obtener_titulo(); ?></h1>
+        <div class="col-12 d-block d-sm-none" style="overflow-y: scroll;padding: 2.8em; scroll-behavior: smooth;">
+            <p style="font-size: 1.5em"><?php echo nl2br($entrada -> obtener_texto()); ?></p>
+            <br>
             <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
-            <br><br>
-            <p align="justify"><?php echo nl2br($entrada -> obtener_texto()); ?></p>      
             <br><br>
             <div class="sharethis-inline-share-buttons"></div>
             <br><br>
