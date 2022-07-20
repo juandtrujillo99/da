@@ -1,8 +1,8 @@
-ErrorDocument 400 http://dareadsonline.cf/
-ErrorDocument 401 http://dareadsonline.cf/
-ErrorDocument 403 http://dareadsonline.cf/
-ErrorDocument 404 http://dareadsonline.cf/
-ErrorDocument 503 http://dareadsonline.cf/
+ErrorDocument 400 http://juandtrujillo.cf/
+ErrorDocument 401 http://juandtrujillo.cf/
+ErrorDocument 403 http://juandtrujillo.cf/
+ErrorDocument 404 http://juandtrujillo.cf/
+ErrorDocument 503 http://juandtrujillo.cf/
 Options +FollowSymLinks
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d

@@ -8,7 +8,7 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
         <img class="logo" itemprop="image" alt="logo <?php echo $nombreEmpresa; ?>" src="<?php echo RUTA_IMG; ?>logo/1.png">
         <div class="d-none d-sm-block">
           <br><br>
-          <a href="<?php echo RUTA_PERFIL;?>">Administracion</a>
+          <a href="<?php echo RUTA_PERFIL_ADMIN;?>">Administracion</a>
           <br>
           <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG;?>">Gestor blog</a>
           <br>
