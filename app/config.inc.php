@@ -86,6 +86,7 @@ include_once 'info_empresa.inc.php';
 
 //recursos
 	define("RUTA_IMG", SERVIDOR."/assets/");
+	define("RUTA_BLOG_FILES", SERVIDOR."/assets/archivos/");
 	define("RUTA_IMG_OPTIMIZADA", SERVIDOR."/assets/webp/");
 	define("RUTA_VIDEOS", SERVIDOR."/videos/");
 	define("RUTA_BLOG_COVER", SERVIDOR."/assets/cover/blog/");

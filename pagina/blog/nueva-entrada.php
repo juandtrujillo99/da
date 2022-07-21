@@ -52,6 +52,7 @@ $imagenCompartida = RUTA_IMG_OPTIMIZADA."fondo/portada-inicio.webp";
 
 include_once 'seccion/cabecera-inicio.inc.php';
 include_once 'scripts/blog/barra-progreso.php';//script que sube las imagenes de las entradas
+include_once 'scripts/blog/barra-progreso-archivo-imagen.php';//script que sube las imagenes de las entradas
 include_once 'seccion/cabecera-cierre.inc.php';
 ?>
 <div class="container-fluid">
@@ -101,6 +102,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
 	</div>
 </div>
 <script type="text/javascript" src="<?php echo RUTA_JS; ?>emoji.js"></script>
+<script type="text/javascript" src="<?php echo RUTA_JS; ?>copiar.js"></script>
 <?php
 include_once 'seccion/doc-terminacion.inc.php';
 ?>

@@ -4,7 +4,7 @@ header("Content-type: text/html; charset=utf8");
 include '../../app/config.inc.php';
 
 
-
+// subir el cover de las entradas
 if (empty($_FILES["file1"])) {
 	echo "Olvidaste seleccionar un archivo válido.";
 }
@@ -59,6 +59,3 @@ else{
 	    echo "Falló la subida, error al mover el archivo";
 	}
 }
-
-?>
-
