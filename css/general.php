@@ -15,7 +15,8 @@ body::-webkit-scrollbar-thumb {background: <?php echo $colorMarca2;?>;border-rad
 /*barra de scroll*/
 
 
-
+.mayusculas{text-transform: uppercase;}
+.minusculas{text-transform: lowercase;}
 .sombra{box-shadow: 0px .1px 5px 0px rgba(0,0,0,0.5);}
 
 .textoBlack{font-family: <?php echo $textoBlack;?>;font-style: italic;}
@@ -284,3 +285,7 @@ h6{text-transform: uppercase;}
 .pc .collapsible-header h5{font-size: 1.8em;}
 .pc .collapsible-header span{font-size: 2em; position: absolute;margin-top: .1em;right: 5em}
 .pc .collapsible-body p{padding-left: 1em;}
+
+
+.panel-lateral {background-color: #202020;color: white;}
+.panel-lateral li > a {border-bottom:.5px solid white;margin: 1.5em;font-size: .9em;color: white;padding-left:0}

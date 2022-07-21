@@ -3,7 +3,7 @@
     
     /* colores de la marca*/
     $colorMarca = "#940000";//rojo
-    $colorMarca2 = "#0d0d0d";//negro
+    $colorMarca2 = "#202020";//negro
     $colorMarca3 = "#c9c9c9";//gris
     $colorMarca4 = "#fff";//blanco
     $colorDescuento = "#7ED957";//verde

@@ -54,32 +54,53 @@ include_once 'seccion/cabecera-inicio.inc.php';
 include_once 'scripts/blog/barra-progreso.php';//script que sube las imagenes de las entradas
 include_once 'seccion/cabecera-cierre.inc.php';
 ?>
-<div class="container" style="margin-bottom: 3em;">
-	<div class="row valign-wrapper">
-		<div class="col-12" style="padding: 5em 0 2em 0;">
-		    <h1 class="text-center textoBlack textoTitulo"><?php echo $titulo; ?></h1>
-		</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2 valign-wrapper">
+			<ul id="slide-out" class="sidenav sidenav-fixed panel-lateral">
+			<li>
+				<div class="row" style="font-size: 1.5em;padding: 2em 0 0 1em;">
+					<div class="col-1"><a href="#!"></div>
+					<div class="col-2"><a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG ?>" style="color: white;"><i class="fa-solid fa-arrow-left"></i></a></div>
+					<div class="col-9 textoBlack mayusculas">Panel de ayuda</div>
+				</div>
+		      </li>
+		      <li><br></li>
+		      <li><a href="#!">Subir imágenes al sitio web</a></li>
+		      <li><a href="#!">Subir PDF al sitio web</a></li>
+		      <li><a href="#!">Poner negrita</a></li>
+		      <li><a href="#!">Agregar un enlace externo</a></li>
+		      <li><a href="#!">Agregar URL personalizada</a></li>
+		    </ul>
+          
 
-		<div class="col-12 row">
-			<div class="col-1"></div>
-			<div class="col-10">
-				<form class="form-nueva-entrada" method="post" action="<?php echo RUTA_NUEVA_ENTRADA_BLOG ?>">
-					<?php
-						if (isset($_POST['guardar'])) {
-							include_once 'seccion/blog/form_nueva_entrada_validado.inc.php';
-						} else {						
-							include_once 'seccion/blog/form_nueva_entrada_vacio.inc.php';
-						}
-					?>
-					<br>
-					<button type="submit" class="btn btn-secundario-animado" name="guardar">Publicar</button>
-				</form>
+		</div>
+		<div class="col-md-10 row">
+			<div class="row valign-wrapper">
+				<div class="col-12" style="padding: 4em 0 1em 0;">
+				    <h1 class="text-center textoBlack textoTitulo"><?php echo $titulo; ?></h1>
+				</div>
+
+				<div class="col-12 row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<form class="form-nueva-entrada" method="post" action="<?php echo RUTA_NUEVA_ENTRADA_BLOG ?>">
+							<?php
+								if (isset($_POST['guardar'])) {
+									include_once 'seccion/blog/form_nueva_entrada_validado.inc.php';
+								} else {						
+									include_once 'seccion/blog/form_nueva_entrada_vacio.inc.php';
+								}
+							?>					
+						</form>
+					</div>
+				</div>
 			</div>
+			<?php include_once 'seccion/copyright.inc.php';?>
 		</div>
 	</div>
 </div>
-
+<script type="text/javascript" src="<?php echo RUTA_JS; ?>emoji.js"></script>
 <?php
-include_once 'seccion/copyright.inc.php';
 include_once 'seccion/doc-terminacion.inc.php';
 ?>
