@@ -53,9 +53,10 @@ else{
 	if(move_uploaded_file($fileTmpLoc, $carpeta."/".$nombreEmpresa.date("d-m-Y").$string_aleatorio.utf8_decode($fileName))){	
 		?>
 		<input type="text" name="imagen" value="<?php echo $nombreEmpresa.date("d-m-Y").$string_aleatorio.$fileName;?>" class="d-none">
-		<img style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);" src="<?php echo RUTA_BLOG_COVER.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>" class="imagen-2">
+		<img style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);" src="<?php echo RUTA_BLOG_COVER.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>" class="imagen">
 		<br><br>
 		<p style="font-size: .5em;color: grey;">Vista Previa</p>
+		<div class="d-block d-sm-none"><br><br></div>
 		<?php
 	} else {
 	    echo "Falló la subida, error al mover el archivo";

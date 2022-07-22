@@ -48,8 +48,9 @@ include_once 'seccion/doc-navbar.inc.php';
 				<?php
 				include_once 'seccion/admin/perfil/portada.inc.php';
 				?>  
-				<div class="row perfil" style="padding: 4em 2em 4em 10em;">
-				    <div class="col-12 col-md-6 row textoParrafo center-align valign-wrapper">
+				<div class="row perfil" style="padding: 4em 2em 4em 2em;">
+					<div class="col-md-2"></div>
+				    <div class="col-12 col-md-4 row textoParrafo center-align valign-wrapper">
 				        <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG; ?>" class="col-12" style="padding:.5em 0">
 				            <p class="btn-principal"><i style="padding:1em 0" class="fa-solid fa-pen-to-square"></i> Gestionar blog</p>
 				        </a>			        

@@ -42,7 +42,7 @@ else{
 
 	if(move_uploaded_file($fileTmpLoc, $carpeta."/".$nombreEmpresa.date("d-m-Y").$string_aleatorio.utf8_decode($fileName))){	
 		?>
-		<img style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);" src="<?php echo RUTA_BLOG_FILES.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>" class="imagen-2">
+		<img style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);" src="<?php echo RUTA_BLOG_FILES.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>" class="imagen">
 		<br><br>
 		<p style="font-size: .5em;color: grey;">Vista Previa</p>
 		<br>

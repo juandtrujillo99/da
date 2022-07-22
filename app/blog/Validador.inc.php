@@ -56,7 +56,18 @@ abstract class ValidadorBlog {
 
 	protected function validar_url($conexion, $url){
 		if (!$this -> variable_iniciada($url)) {
-			return "Inserta la url con la que quieres que aparezca tu entrada";
+			
+			$caracteres = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		    $numero_caracteres = strlen($caracteres);
+		    $string_aleatorio = '';
+		    
+
+		    for ($i = 0; $i < 7; $i++) {
+		        $string_aleatorio .= $caracteres[rand(0, $numero_caracteres - 1)];
+		    }
+
+		    $this -> url = $string_aleatorio;
+
 		}
 		else{
 			$this -> url = $url;

@@ -31,7 +31,7 @@ class EscritorEntradasBlog {
             return;
         }
         ?>
-        <a href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-4 col-md-3" style="padding:.5em">
+        <a href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-4 col-md-3" style="padding:.1em">
             <div class="row card" style="background-color: white;color: black;box-shadow: none;border: 0;">
                 <div class="card-image">                    
                     <div align="center">   

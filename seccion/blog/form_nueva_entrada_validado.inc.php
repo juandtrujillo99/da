@@ -78,7 +78,7 @@
     	<div class="col-1"></div>
     	<div class="col-10">
 			<div class="input-field col-12">
-				<input placeholder="Inserta aquí el código que copiaste" type="text" name="url_externa" id="url_externa" <?php $validador -> mostrar_url_externa(); ?> >
+				<input placeholder="Empieza con <iframe ..." type="text" name="url_externa" id="url_externa" <?php $validador -> mostrar_url_externa(); ?> >
 				<?php $validador -> mostrar_error_url_externa(); ?>
 				<label for="url_externa">Enlace externo</label>
 				<br><br>

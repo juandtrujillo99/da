@@ -1,9 +1,10 @@
 <div class="row section" id="subida-imagen">
     <?php //subida de la imagen?>
     <div class="col-12 col-md-7 row valign-wrapper" style="padding: 3em;">
-    	<div class="col-1"></div>
-    	<div class="col-10">
-        	<p class="textoBlack mayusculas" style="font-size: 2em;">Agrega una imagen de portada</p>
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10">
+        	<p class="textoBlack mayusculas d-none d-sm-block" style="font-size: 2em;">Agrega una imagen de portada</p>
+        	<p class="textoBlack mayusculas d-block d-sm-none" style="font-size: 1.2em;">Agrega una imagen de portada</p>
 			<p><font color="grey">* Selecciona una imagen y luego presiona el boton subir.</font></p>
 			<br>
 			<label for="file1" id="label-archivo" class="btn btn-principal">Seleccionar</label>
@@ -31,25 +32,25 @@
     <div class="col-12 row valign-wrapper">
     	<div class="col-1"></div>
     	<div class="col-10 row">
-        	<div class="input-field col-6">
+        	<div class="input-field col-md-6 col-12">
 				<input type="text" name="titulo" id="titulo" class="validate">
 				<label for="titulo">Escribe un título para esta entrada</label>
-				<br><br><br>
+				<div class="d-none d-sm-block"><br><br><br></div>
 			</div>
 			<div class="col-1"></div>
-			<div class="input-field col-5">
+			<div class="input-field col-md-5 col-12">
 				<input type="text" name="etiqueta" id="etiqueta" class="validate">
 				<label for="etiqueta">Categoría de la entrada</label>
+				<div class="d-block d-sm-none"><br><br></div>
 			</div>
 			<div class="input-field col-12">
-<textarea id="texto" name="texto" style="resize: none;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500">
-
-
-
-</textarea>
+			<textarea id="texto" name="texto" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500"></textarea>
 				<label for="texto">¿Qué deseas compartir?</label>
-				<p><input id="bold" type="button" value="B" class="btn btn-principal"> 
-					<a class="waves-effect waves-light btn btn-principal modal-trigger" href="#imgAdd"><i class="fa-regular fa-image"></i></a>
+				<p>
+					<input id="bold" type="button" value="B" class="btn btn-principal tooltipped" data-position="bottom" data-tooltip="Negrita"> 
+					<a class="waves-effect waves-light btn btn-principal modal-trigger tooltipped" data-position="bottom" data-tooltip="Insertar imagen" href="#imgAdd">
+						<i class="fa-regular fa-image"></i>
+					</a>
 				</p>
 				<p id="resultado" class="d-none"></p>
 			</div>      	
@@ -66,19 +67,22 @@
 
 
 
-<div class="row section" id="etiquetas">
+<div class="row section" id="etiquetas" style="display: flex;position: relative;">
     <?php //Agregar texto y contenido?>
     <div class="col-12 row valign-wrapper">
     	<div class="col-1"></div>
     	<div class="col-10">
 			<div class="input-field col-12">
-				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="1350" minlength="10"></textarea>
+				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="1350" minlength="10" style="resize: none;max-height: 40vh;overflow-y: scroll;"></textarea>
 				<label for="url_externa">Enlace externo (Opcional)</label>
-				<br><br>
+				<br><br><div class="d-block d-sm-none"><br></div>
 			</div>   
-        	<div class="input-field">
-				<input type="text" name="url" id="url" class="validate">
-				<label for="url">URL personalizada (Opcional)</label>
+        	<div class="row valign-wrapper">
+        		<div class="col-md-4 d-none d-sm-block"><?php echo RUTA_ENTRADA_BLOG."/" ?></div>
+        		<div class="input-field col-md-8 col-12">
+        			<input type="text" name="url" id="url" class="validate">
+					<label for="url">url-personalizada</label>
+				</div>
 			</div>   	
         </div>
     </div>
@@ -104,9 +108,10 @@
 	<div class="modal-content">
 		<div class="row">
 			<div class="col-md-7 col-12 row valign-wrapper" style="padding: 3em;">
-		    	<div class="col-1"></div>
-		    	<div class="col-10">
-		        	<p class="textoBlack mayusculas" style="font-size: 2em;">Sube una imagen al sitio web</p>
+		    	<div class="col-md-1"></div>
+		    	<div class="col-md-10">
+		        	<p class="textoBlack mayusculas" style="font-size: 1.5em;line-height: 1.1;">Sube una imagen al sitio web</p>
+		        	<br>
 					<p><font color="grey">* Selecciona la imagen y luego presiona el boton subir.</font></p>
 					<br>
 					<label for="archivoImagen" id="label-archivo-imagen" class="btn btn-principal">Seleccionar</label>
