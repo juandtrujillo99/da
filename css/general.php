@@ -117,6 +117,7 @@ h6{text-transform: uppercase;}
 .bg{background-repeat: none;background-position: center;background-attachment: fixed;background-size: cover;}
 .bg2{background-position: center;background-attachment:absolute;background-size: cover;}
 .bggrey{background-color: #f1f1f1;}
+.bggrey .collapsible-header{padding: 1em 0;}
 .bggrey2{background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);}
 
 
