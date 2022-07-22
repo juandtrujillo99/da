@@ -80,7 +80,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
 		<div class="col-md-10 row">
 			<div class="row valign-wrapper">
 				<div class="col-12" style="padding: 3em 0 1em 0;">
-				    <p class="text-center textoBlack mayusculas" style="font-size:2.5em;padding:0 2em;line-height:1.1em"><?php echo $titulo; ?></p>
+				    <p class="text-center textoBlack mayusculas" style="font-size:2em;padding:0 2em;line-height:1.1em"><?php echo $titulo; ?></p>
 				</div>
 
 				<div class="col-12 row">
@@ -102,6 +102,40 @@ include_once 'seccion/cabecera-cierre.inc.php';
 		</div>
 	</div>
 </div>
+
+
+<?php //subir una imagen al servidor Modal ?>
+<div id="imgAdd" class="modal" style="width: 70%;height: 70vh;overflow-y: scroll;">
+	<div class="modal-header right">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+	</div>
+	<div class="modal-content">
+		<div class="row">
+			<div class="col-md-7 col-12 row valign-wrapper" style="padding: 3em;">
+		    	<div class="col-md-1"></div>
+		    	<div class="col-md-10">
+		        	<p class="textoBlack mayusculas" style="font-size: 1.5em;line-height: 1.1;">Sube una imagen al sitio web</p>
+		        	<br>
+					<p><font color="grey">* Selecciona la imagen y luego presiona el boton subir.</font></p>
+					<br>
+					<label for="archivoImagen" id="label-archivo-imagen" class="btn btn-principal">Seleccionar</label>
+					<input type="file" name="archivoImagen" id="archivoImagen" class="d-none">		
+					<input name="archivoImagen" class="d-none">					
+					<input type="button" value="Subir" name="guardar_file_imagen" id="guardar_file_imagen" onclick="subirImagenes()"  class="btn btn-principal">
+					<progress id="progressBarImagen" class="barra-progreso" value="0" max="100" style="width:100%;height: 0.5em;"></progress>	   	
+		        </div>
+		    </div>
+		    <div class="col-md-5 center-align valign-wrapper">
+		    	<div class="col-12 row">
+		    		<h4 id="statusFile"></h4>
+		    		<p id="logTarget"></p>		
+		    	</div>   	   	
+		    </div>	
+		</div>
+	</div>
+</div>
+
+
 <script src="<?php echo RUTA_JS; ?>formato-texto.js"></script>
 
 <?php

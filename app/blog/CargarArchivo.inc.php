@@ -56,7 +56,6 @@ else{
 		<img style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);" src="<?php echo RUTA_BLOG_COVER.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>" class="imagen">
 		<br><br>
 		<p style="font-size: .5em;color: grey;">Vista Previa</p>
-		<div class="d-block d-sm-none"><br><br></div>
 		<?php
 	} else {
 	    echo "Falló la subida, error al mover el archivo";

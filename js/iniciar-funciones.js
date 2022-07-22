@@ -8,7 +8,7 @@
 
   	$('.dropdown-button').dropdown({constrainWidth: false, /*editar y eliminar del gestor*/});
 
-  	$('.modal').modal();
+  	$('.modal').modal();$('#errores').modal('open');
 
   	$('.slider').slider({interval: 4000});
 

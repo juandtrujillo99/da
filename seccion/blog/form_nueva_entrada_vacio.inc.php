@@ -48,6 +48,7 @@
 				<label for="texto">¿Qué deseas compartir?</label>
 				<p>
 					<input id="bold" type="button" value="B" class="btn btn-principal tooltipped" data-position="bottom" data-tooltip="Negrita"> 
+					<input id="italic" type="button" value="<?php echo '𝑰';?>" class="btn btn-principal tooltipped" data-position="bottom" data-tooltip="Cursiva"> 
 					<a class="waves-effect waves-light btn btn-principal modal-trigger tooltipped" data-position="bottom" data-tooltip="Insertar imagen" href="#imgAdd">
 						<i class="fa-regular fa-image"></i>
 					</a>
@@ -100,35 +101,6 @@
 
 
 
-<?php //subir una imagen al servidor Modal ?>
-<div id="imgAdd" class="modal" style="width: 70%;height: 70vh;overflow-y: scroll;">
-	<div class="modal-header right">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-	</div>
-	<div class="modal-content">
-		<div class="row">
-			<div class="col-md-7 col-12 row valign-wrapper" style="padding: 3em;">
-		    	<div class="col-md-1"></div>
-		    	<div class="col-md-10">
-		        	<p class="textoBlack mayusculas" style="font-size: 1.5em;line-height: 1.1;">Sube una imagen al sitio web</p>
-		        	<br>
-					<p><font color="grey">* Selecciona la imagen y luego presiona el boton subir.</font></p>
-					<br>
-					<label for="archivoImagen" id="label-archivo-imagen" class="btn btn-principal">Seleccionar</label>
-					<input type="file" name="archivoImagen" id="archivoImagen" class="d-none">		
-					<input name="archivoImagen" class="d-none">					
-					<input type="button" value="Subir" name="guardar_file_imagen" id="guardar_file_imagen" onclick="subirImagenes()"  class="btn btn-principal">
-					<progress id="progressBarImagen" class="barra-progreso" value="0" max="100" style="width:100%;height: 0.5em;"></progress>	   	
-		        </div>
-		    </div>
-		    <div class="col-md-5 center-align valign-wrapper">
-		    	<div class="col-12 row">
-		    		<h4 id="statusFile"></h4>
-		    		<p id="logTarget"></p>		
-		    	</div>   	   	
-		    </div>	
-		</div>
-	</div>
-</div>
+
 
 
