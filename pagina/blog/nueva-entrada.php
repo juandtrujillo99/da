@@ -46,7 +46,7 @@ if (isset($_POST['guardar'])) {
 	}
 }
 
-$titulo = "Nueva entrada de la newsletter";
+$titulo = "Nueva entrada";
 $descripcionPagina = $descripcionNegocio;
 $imagenCompartida = RUTA_IMG_OPTIMIZADA."fondo/portada-inicio.webp";
 
@@ -56,6 +56,14 @@ include_once 'scripts/blog/barra-progreso-archivo-imagen.php';//script que sube 
 include_once 'seccion/cabecera-cierre.inc.php';
 ?>
 <div class="container-fluid">
+	<div class="d-block d-sm-none" style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1.5em;position: fixed;width: 100%;z-index: 99999;">
+		<div class="row">
+	        <div class="col-2">
+	            <a style="color: white;" href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG;?>"><i class="fa-solid fa-angle-left"></i></a>
+	        </div>
+	        <div class="col-10"><?php echo $titulo; ?></div>
+        </div>
+    </div>
 	
 	<div class="row">  
 		<div class="col-md-2 valign-wrapper">
@@ -64,7 +72,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
 			<li>
 				<div class="row" style="font-size: 1.5em;padding: 2em 0 0 1em;">
 					<div class="col-1"><a href="#!"></div>
-					<div class="col-2"><a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG ?>" style="color: white;"><i class="fa-solid fa-arrow-left"></i></a></div>
+					<div class="col-2 d-none d-sm-block"><a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG ?>" style="color: white;"><i class="fa-solid fa-arrow-left"></i></a></div>
 					<div class="col-9 textoBlack mayusculas">Panel de ayuda</div>
 				</div>
 		      </li>
@@ -74,13 +82,12 @@ include_once 'seccion/cabecera-cierre.inc.php';
 		      <li><a href="#!">Poner negrita</a></li>
 		      <li><a href="#!">Agregar un enlace externo</a></li>
 		      <li><a href="#!">Agregar URL personalizada</a></li>
-		    </ul>         
-
+		    </ul>
 		</div>
 		<div class="col-md-10 row">
 			<div class="row valign-wrapper">
 				<div class="col-12" style="padding: 3em 0 1em 0;">
-				    <p class="text-center textoBlack mayusculas" style="font-size:2em;padding:0 2em;line-height:1.1em"><?php echo $titulo; ?></p>
+				    <p class="text-center textoBlack mayusculas d-none d-sm-block" style="font-size:2em;padding:0 2em;line-height:1.1em"><?php echo $titulo; ?></p>
 				</div>
 
 				<div class="col-12 row">
@@ -111,7 +118,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
 	</div>
 	<div class="modal-content">
 		<div class="row">
-			<div class="col-md-7 col-12 row valign-wrapper" style="padding: 3em;">
+			<div class="col-md-7 col-12 row valign-wrapper" style="padding: 1em;">
 		    	<div class="col-md-1"></div>
 		    	<div class="col-md-10">
 		        	<p class="textoBlack mayusculas" style="font-size: 1.5em;line-height: 1.1;">Sube una imagen al sitio web</p>

@@ -25,8 +25,8 @@
 <div class="row section" id="subida-imagen">
     <?php //subida de la imagen?>
     <div class="col-12 col-md-7 row valign-wrapper">
-    	<div class="col-md-1"></div>
-    	<div class="col-md-10">
+    	<div class="col-md-2"></div>
+    	<div class="col-md-9">
 			<?php
 			$rutaFoto = RUTA_BLOG_COVER.$validador -> obtener_imagen();
 			$foto = $validador -> obtener_imagen();
@@ -77,7 +77,8 @@
     	</div>   	   	
     </div>
     <div class="col-12 row">
-    	<div class="col-12">
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10">
 		    <a href="#descripcion-texto" style="font-size: .8em;" class="textoBold btn btn-principal-animado">Siguiente</a>
 		</div>
 	</div>
@@ -86,8 +87,8 @@
 <div class="row section" id="descripcion-texto">
     <?php //Agregar texto y contenido?>
     <div class="col-12 row valign-wrapper">
-    	<div class="col-1"></div>
-    	<div class="col-10 row">
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10 row">
         	<div class="input-field col-md-6 col-12">
 				<input type="text" name="titulo" id="titulo" class="validate"<?php $validador -> mostrar_titulo(); ?> >
 				<?php $validador -> mostrar_error_titulo(); ?>
@@ -117,8 +118,8 @@
         </div>
     </div>
     <div class="col-12 row">
-    	<div class="col-1"></div>
-    	<div class="col-10">
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10">
 		    <a href="#" style="font-size: .8em;" class="textoBold btn btn-principal">Anterior</a>
 		    <a href="#etiquetas" style="font-size: .8em;" class="textoBold btn btn-principal-animado">Siguiente</a>
 		</div>
@@ -128,8 +129,8 @@
 <div class="row section" id="etiquetas" style="display: flex;position: relative;">
     <?php //Agregar texto y contenido?>
     <div class="col-12 row valign-wrapper">
-    	<div class="col-1"></div>
-    	<div class="col-10">
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10">
 			<div class="input-field col-12">
 
 				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="300" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" ><?php $validador -> mostrar_url_externa(); ?></textarea>
@@ -148,8 +149,8 @@
         </div>
     </div>
     <div class="col-12 row">
-    	<div class="col-1"></div>
-    	<div class="col-10">
+    	<div class="col-md-1"></div>
+    	<div class="col-md-10">
 		    <a href="#descripcion-texto" style="font-size: .8em;" class="textoBold btn btn-principal">Anterior</a>
 		    <button type="submit" class="btn btn-principal-animado" name="guardar">Publicar</button>
 		</div>
