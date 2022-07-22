@@ -32,8 +32,8 @@ class EscritorEntradasBlog {
         }
         ?>
         <a href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-4 col-md-3" style="padding:.1em">
-            <div class="row card" style="background-color: white;color: black;box-shadow: none;border: 0;">
-                <div class="card-image">                    
+            <div class="row card" style="background: none;box-shadow: none;border: 0;margin-bottom: .05em;">
+                <div class="card-image" style="padding: .2em;">                    
                     <div align="center">   
                         <div loading="lazy" itemprop="image" class="img-entrada d-none d-sm-block bg-cover" style="background-image:url(<?php echo RUTA_BLOG_COVER. $entrada -> obtener_imagen(); ?>);"></div>
                         <div loading="lazy" itemprop="image" class="img-entrada-m d-block d-sm-none bg-cover" style="background-image:url(<?php echo RUTA_BLOG_COVER. $entrada -> obtener_imagen(); ?>);"></div>

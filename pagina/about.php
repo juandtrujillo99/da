@@ -15,6 +15,7 @@ include_once 'seccion/cabecera-inicio.inc.php';
 ?>
 <link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>aparecer.css">
 <link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>sobreponer.css">
+<link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>recortar-imagen.css">
 <?php
 include_once 'seccion/cabecera-cierre.inc.php';
 include_once 'seccion/doc-navbar.inc.php';
@@ -77,12 +78,12 @@ include_once 'seccion/doc-navbar.inc.php';
 					</div>
 				</div>
 				<div class="col-12 row anime-1">
-					<div class="col-7 row" style="margin-top: 4em">
-						<div class="col-7" style="height: 90%;background-image:url(<?php echo RUTA_IMG;?>fondos/11.webp);background-repeat: none;background-position: center;background-attachment: fixed;background-size: cover;" ></div>
-						<div class="col-1 row">
-							<div class="col-8" style="height: 90%;background-image:url(<?php echo RUTA_IMG;?>fondos/11.webp);background-repeat: none;background-position: center;background-attachment: fixed;background-size: cover;" ></div>
+					<div class="col-7" style="margin-top: 4em">
+						<div class="row" style="background-position: center;width: 90%;height: 90%;background-image:url(<?php echo RUTA_IMG;?>fondos/11.webp);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;" >
+							<div class="col-8"></div>
+							<div class="col-1 row"><div class="col-4" style="background-color: white;"></div></div>
+							<div class="col-3"></div>
 						</div>
-						<div class="col-4" style="height: 90%;background-image:url(<?php echo RUTA_IMG;?>fondos/11.webp);background-repeat: none;background-position: center;background-attachment: fixed;background-size: cover;" ></div>
 					</div>
 					<div class="col-5 row section valign-wrapper">
 						<div class="col-2"></div>
@@ -99,7 +100,7 @@ include_once 'seccion/doc-navbar.inc.php';
 					<div class="col-10 row anime-1 bggrey section2 valign-wrapper" style="max-height: 90%;">
 						<div class="col-1"></div>
 						<div class="col-4" align="center">
-							<img loading="lazy" src="<?php echo RUTA_IMG;?>opiniones/juan.webp" class="imagen-2 circle">
+							<div class="bg-cover circle" style="width: 15em;height: 15em;background-position: center center;background-color: black;background-image:url(<?php echo SERVIDOR.'/assets/fotos-perfil/admin/Juan'; ?>);"></div>  
 						</div>
 						<div class="col-6" style="padding:1em 4em;">
 							<p>
@@ -167,7 +168,7 @@ include_once 'seccion/doc-navbar.inc.php';
 				<div class="col-3"></div>
 				<div class="col-6 anime-3" style="z-index: 3;margin-top: 4em;">
 					<br><br>
-					<img loading="lazy" src="<?php echo RUTA_IMG;?>opiniones/juan.webp" class="imagen circle">
+					<div class="bg-cover circle" style="width: 15em;height: 15em;background-position: center center;background-color: black;background-image:url(<?php echo SERVIDOR.'/assets/fotos-perfil/admin/Juan'; ?>);"></div>  
 				</div>
 				<div class="col-3"></div>
 		        <div class="col-1"></div>

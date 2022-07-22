@@ -52,7 +52,7 @@ include_once 'scripts/blog/barra-progreso-archivo-imagen.php';//script que sube 
 include_once 'seccion/cabecera-cierre.inc.php';
 ?>
 <div class="container-fluid">
-	<div class="d-block d-sm-none" style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1.5em;position: fixed;width: 100%;z-index: 99999;">
+	<div class="d-block d-sm-none" style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1.5em;position: fixed;width: 100%;z-index: 1001;">
 		<div class="row">
 	        <div class="col-2">
 	            <a style="color: white;" href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG;?>"><i class="fa-solid fa-angle-left"></i></a>

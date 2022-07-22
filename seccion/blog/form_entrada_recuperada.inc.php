@@ -46,7 +46,8 @@
     </div>
     <div class="col-md-5 center-align valign-wrapper">
     	<div class="col-12 row">
-    		<h4 id="status"></h4>		
+    		<h4 id="status"></h4>
+    		<input type="hidden" id="imagen-original" name="imagen-original" value="<?php echo $entrada_recuperada -> obtener_imagen(); ?>">		
     	</div>   	   	
     </div>
     <div class="col-12 row">
@@ -107,7 +108,7 @@
     	<div class="col-md-10">
 			<div class="input-field col-12">
 
-				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="300" style="min-height: 10vh;max-height: 20vh;overflow-y: scroll;" ><?php echo $entrada_recuperada -> obtener_url_externa(); ?></textarea>
+				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="300" style="min-height: 10vh;max-height: 20vh;overflow-y: scroll;" placeholder="Empieza por <iframe ..."><?php echo $entrada_recuperada -> obtener_url_externa(); ?></textarea>
 				<input type="hidden" id="url_externa-original" name="url_externa-original" value="<?php echo $entrada_recuperada -> obtener_url_externa(); ?>">
 				<label for="url_externa">Enlace externo (Opcional)</label>
 				<br><br><br>

@@ -1,5 +1,5 @@
-<?php //subir una imagen al servidor Modal ?>
-<div id="errores" class="modal" style="width: 90%;height: 75vh;overflow-y: scroll;">
+<?php //modal que avisa al usuario que errores hay que corregir ?>
+<div id="errores" class="modal" style="width: 90%;height: 75vh;overflow-y: scroll;z-index: 999999;">
 	<div class="modal-content">
 		<div class="row">
 			<div class="col-12 row center-align valign-wrapper" style="padding: 2em;">
@@ -133,7 +133,7 @@
     	<div class="col-md-10">
 			<div class="input-field col-12">
 
-				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="300" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" ><?php $validador -> mostrar_url_externa(); ?></textarea>
+				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="300" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" placeholder="Empieza por <iframe ..."><?php $validador -> mostrar_url_externa(); ?></textarea>
 				<?php $validador -> mostrar_error_url_externa(); ?>
 				<label for="url_externa">Enlace externo (Opcional)</label>
 				<br><br><br>

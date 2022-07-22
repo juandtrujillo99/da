@@ -75,7 +75,7 @@
     	<div class="col-md-1"></div>
     	<div class="col-md-10">
 			<div class="input-field col-12">
-				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="1350" minlength="10" style="resize: none;max-height: 40vh;overflow-y: scroll;"></textarea>
+				<textarea id="url_externa" name="url_externa" class="materialize-textarea" data-length="1350" minlength="10" style="resize: none;max-height: 40vh;overflow-y: scroll;" placeholder="Empieza por <iframe ..."></textarea>
 				<label for="url_externa">Enlace externo (Opcional)</label>
 				<br><br><div class="d-block d-sm-none"><br></div>
 			</div>   

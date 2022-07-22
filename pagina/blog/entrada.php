@@ -76,13 +76,8 @@ include_once 'seccion/doc-navbar.inc.php';
             <br><br>
             <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="-69nWccB" data-limit="5" data-color="000"></script>
         </div>
-        <div class="col-12" style="background-color: #0d0d0d; color: white;padding: 2em 0;">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10 col-12">
-                    <?php include_once 'seccion/blog/entradas_al_azar.inc.php';?>
-                </div>
-            </div>
+        <div class="col-12" style="background-color: #0d0d0d; color: white;padding: 2em 1em;">
+            <?php include_once 'seccion/blog/entradas_al_azar.inc.php';?>
         </div>
     </div>
 </div>
