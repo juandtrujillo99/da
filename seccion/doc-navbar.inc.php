@@ -31,7 +31,7 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
       <img class="logo" itemprop="image" alt="logo <?php echo $nombreEmpresa; ?>" src="<?php echo RUTA_IMG; ?>logo/3.png">
       <div>
         <br><br>
-        <a href="<?php echo SERVIDOR;?>#inicio-m">Inicio</a>
+        <a href="<?php echo SERVIDOR;?>">Inicio</a>
         <br>
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -49,7 +49,7 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
         <br>
         <a href="<?php echo RUTA_BLOG;?>">Blog</a>
         <br>
-        <a href="<?php echo SERVIDOR;?>#contacto-m">Contacto</a>
+        <a href="<?php echo SERVIDOR;?>#contacto">Contacto</a>
         <br><br>
         <p style="color: white;font-size: 1.2em;letter-spacing: .05em;">Sígueme</p>
         <div class="col-12 row redes">
