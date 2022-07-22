@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {background: <?php echo $colorMarca2;?>;border-rad
 
 .textoBlack{font-family: <?php echo $textoBlack;?>;font-style: italic;}
 .texto2Black{font-family: <?php echo $texto2Black;?>}
-.textoBold{font-family: <?php echo $texto2Bold;?>}
+.textoBold{font-family: <?php echo $textoBold;?>}
 .textoBoldItalic{font-family: <?php echo $textoBoldItalic;?>}
 .textoItalic{font-family: <?php echo $textoItalic;?>}
 .textoRegular{font-family: <?php echo $textoRegular;?>}

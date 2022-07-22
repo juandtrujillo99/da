@@ -38,10 +38,10 @@ include_once 'seccion/doc-navbar.inc.php';
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 bg-cover" style="background-image: url(<?php echo RUTA_BLOG_COVER;?><?php echo $entrada -> obtener_imagen(); ?>) ;">
+        <div class="col-12 col-md-6 bg-cover" style="background-image: url(<?php echo RUTA_BLOG_COVER;?><?php echo $entrada -> obtener_imagen(); ?>) ;background-position: center;">
             <div class="row">
                 <div class="d-none d-sm-block section" style="background-color: rgba(0, 0, 0, .7);"></div>
-                <div class="d-block d-sm-none" style="height: 50vh;"></div>
+                <div class="d-block d-sm-none" style="height: 52vh;"></div>
             </div>
         </div>
         <?php //para pc ?>
@@ -54,11 +54,24 @@ include_once 'seccion/doc-navbar.inc.php';
             <div class="sharethis-inline-share-buttons"></div>
         </div>
         <?php //para moviles ?>
-        <div class="col-12 d-block d-sm-none" style="overflow-y: scroll;padding: 2em; scroll-behavior: smooth;">
-            <p style="font-size: 1em"><?php echo nl2br($entrada -> obtener_texto()); ?></p>
+        <div class="col-12 d-block d-sm-none" style="padding: 1em;">
+            <div class="row">
+                <div class="col-2">
+                    <a href="<?php echo $instagramEmpresa; ?>" target="_blank">
+                        <div class="bg-cover circle" style="width: 4em;height: 4em;background-position: center center;background-color: black;background-image:url(<?php echo SERVIDOR.'/assets/fotos-perfil/admin/'.$autor->obtener_nombre(); ?>);"></div>                
+                    </a>
+                </div> 
+                <div class="col">
+                    <p style="font-size: 1.1em;padding-top:.8em;">                
+                        <b><?php echo $entrada -> obtener_etiqueta(); ?></b>
+                        <p style="font-size:.8em;color: grey"><?php echo convertirFecha($entrada -> obtener_fecha()); ?></p>
+                    </p>               
+                </div>                
+            </div>
+            <p style="font-size: 1.2em;padding:1.5em 0;">
+                <?php echo nl2br($entrada -> obtener_texto()); ?>
+            </p>
             <br>
-            <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
-            <br><br>
             <div class="sharethis-inline-share-buttons"></div>
             <br><br>
             <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="-69nWccB" data-limit="5" data-color="000"></script>
