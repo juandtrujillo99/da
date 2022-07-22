@@ -101,8 +101,8 @@ include_once 'seccion/cabecera-cierre.inc.php';
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="<?php echo RUTA_JS; ?>emoji.js"></script>
-<script type="text/javascript" src="<?php echo RUTA_JS; ?>copiar.js"></script>
+<script src="<?php echo RUTA_JS; ?>formato-texto.js"></script>
+
 <?php
 include_once 'seccion/doc-terminacion.inc.php';
 ?>

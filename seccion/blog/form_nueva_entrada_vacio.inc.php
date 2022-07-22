@@ -15,8 +15,7 @@
     </div>
     <div class="col-md-5 center-align valign-wrapper">
     	<div class="col-12 row">
-    		<h4 id="status"></h4>  
-    		<p>Vista Previa</p> 		
+    		<h4 id="status"></h4>		
     	</div>   	   	
     </div>
     <div class="col-12 row">
@@ -43,10 +42,14 @@
 				<label for="etiqueta">Categoría de la entrada</label>
 			</div>
 			<div class="input-field col-12">
-				<textarea id="texto" name="texto" style="resize: none;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500"></textarea>
-				<label for="texto" style="transform: translateY(-25px) scale(0.8);">¿Qué deseas compartir?</label>
-				<p><input id="bold" type="button" value="Bold" class="btn btn-principal"> 
-					<a class="waves-effect waves-light btn btn-principal modal-trigger" href="#imgAdd">Imagen</a>
+<textarea id="texto" name="texto" style="resize: none;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500">
+
+
+
+</textarea>
+				<label for="texto">¿Qué deseas compartir?</label>
+				<p><input id="bold" type="button" value="B" class="btn btn-principal"> 
+					<a class="waves-effect waves-light btn btn-principal modal-trigger" href="#imgAdd"><i class="fa-regular fa-image"></i></a>
 				</p>
 				<p id="resultado" class="d-none"></p>
 			</div>      	
@@ -93,10 +96,10 @@
 
 
 
-<!-- Modal Structure -->
+<?php //subir una imagen al servidor Modal ?>
 <div id="imgAdd" class="modal" style="width: 70%;height: 70vh;overflow-y: scroll;">
 	<div class="modal-header right">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
 	</div>
 	<div class="modal-content">
 		<div class="row">
@@ -115,7 +118,8 @@
 		    </div>
 		    <div class="col-md-5 center-align valign-wrapper">
 		    	<div class="col-12 row">
-		    		<h4 id="statusFile"></h4>		
+		    		<h4 id="statusFile"></h4>
+		    		<p id="logTarget"></p>		
 		    	</div>   	   	
 		    </div>	
 		</div>

@@ -47,7 +47,6 @@ else{
 		<p style="font-size: .5em;color: grey;">Vista Previa</p>
 		<br>
 		<input type="text" id="copiar" value="<img src='<?php echo RUTA_BLOG_FILES.$nombreEmpresa.date("d-m-Y").$string_aleatorio."$fileName";?>' class='imagen'>">
-		<button onclick="copyToClipBoard();">Copiar</button>
 		<?php
 	} else {
 	    echo "Falló la subida, error al mover el archivo";
