@@ -13,6 +13,7 @@
 	          	<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $facebookEmpresa;?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
 	          	<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $instagramEmpresa;?>" target="_blank"><i class="fab fa-instagram"></i></a>
           		<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $twitterEmpresa;?>" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          		<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $behanceEmpresa;?>" target="_blank"><i class="fab fa-behance-square"></i></a>
           		<div class="d-block d-sm-none"><br><br><br><br></div>
 			</div>
 		</div>	

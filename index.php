@@ -37,7 +37,7 @@ if($partes_ruta[0] == 'da'){
             $ruta_elegida = 'pagina/about.php';
             break;
             //pagina donde estan todas las vistas prvias del blog
-			case 'blog':
+			case 'newsletter':
 			$ruta_elegida = 'pagina/blog.php';
 			break;
             //servicios

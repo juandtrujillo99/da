@@ -34,7 +34,7 @@
 
 						<p class="texto2Black" style="font-size: 2em;line-height: 1.2em;margin-top: 1.5em;">¿Quieres crear tráfico para tu sitio web?</p>
 
-						<p style="font-size: 1em;padding: 2em;">Yo utilizo Google Ads porque es una de las plataforma más utilizadas.</p>
+						<p style="font-size: 1em;padding: 2em;">Utilizo Google Ads porque es una de las plataforma más grandes para mostrar publicidad en línea.</p>
 
 					</div>
 
@@ -52,9 +52,9 @@
 
 					<div class="col-8 row" style="padding: 2em 0;">
 
-						<p class="texto2Black" style="font-size: 2em;line-height: 1.2em;margin-top: .8em;">¿Quieres crear tráfico para tu sitio web?</p>
+						<p class="texto2Black" style="font-size: 2em;line-height: 1.2em;margin-top: .8em;">¿No sabes cómo montar un anuncio en una red social?</p>
 
-						<p style="font-size: 1em;padding: 2em;">En Facebook Ads hay miles de millones de usuarios activos esperando ser alcanzados por lo que ofreces.</p>
+						<p style="font-size: 1em;padding: 2em;">En Facebook Ads hay miles de millones de usuarios activos esperando para conocer tu producto o servicio.</p>
 
 					</div>
 
@@ -86,7 +86,7 @@
 
 				<p class="texto2Black">¿Quieres crear tráfico para tu sitio web?</p>
 
-				<p>Yo utilizo Google Ads porque es una de las plataforma más utilizadas.</p>		
+				<p>Utilizo Google Ads porque es una de las plataforma más grandes para mostrar publicidad en línea.</p>		
 
 			</div>
 
@@ -94,9 +94,9 @@
 
 				<br><br>
 
-				<p class="texto2Black">¿No sabes como montar un anuncio en una red social?</p>
+				<p class="texto2Black">¿No sabes cómo montar un anuncio en una red social?</p>
 
-				<p>En Facebook Ads hay miles de millones de usuarios activos esperando ser alcanzados por lo que ofreces.</p>				
+				<p>En Facebook Ads hay miles de millones de usuarios activos esperando para conocer tu producto o servicio.</p>				
 
 			</div>
 

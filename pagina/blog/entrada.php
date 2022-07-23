@@ -30,7 +30,6 @@ include_once 'scripts/formatoFecha.php';
 <link rel="canonical" href="<?php echo $url; ?>">
 <?php
 include_once 'seccion/cabecera-cierre.inc.php';
-include_once 'seccion/doc-navbar.inc.php';
 
 //entrada.php es el archivo encargado de crear las entradas, es una plantilla
 ?>
@@ -38,6 +37,14 @@ include_once 'seccion/doc-navbar.inc.php';
 
 <div class="container-fluid">
     <div class="row">
+        <div style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1.5em;position: relative;width: 100%;z-index: 1001;">
+            <div class="row">
+                <div class="col-2">
+                    <a style="color: white;" href="<?php echo RUTA_BLOG;?>"><i class="fa-solid fa-angle-left"></i></a>
+                </div>
+                <div class="col-10">Newsletter</div>
+            </div>
+        </div>
         <div class="col-12 col-md-6 bg-cover" style="background-image: url(<?php echo RUTA_BLOG_COVER;?><?php echo $entrada -> obtener_imagen(); ?>) ;background-position: center;">
             <div class="row">
                 <div class="d-none d-sm-block section" style="background-color: rgba(0, 0, 0, .7);"></div>
@@ -45,7 +52,7 @@ include_once 'seccion/doc-navbar.inc.php';
             </div>
         </div>
         <?php //para pc ?>
-        <div class="col-6 d-none d-sm-block" style="height: 100vh;position: absolute;right: 0;overflow-y: scroll;padding: 3em 4em; scroll-behavior: smooth;">
+        <div class="col-6 d-none d-sm-block" style="height: 100vh;position: absolute;right: 0;overflow-y: scroll;padding: 5em 4em; scroll-behavior: smooth;">
             <h1 class="textoBlack"><?php echo $entrada -> obtener_titulo(); ?></h1>
             <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
             <br><br>

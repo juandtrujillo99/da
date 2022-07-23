@@ -20,7 +20,7 @@ include_once 'info_empresa.inc.php';
 	define("SERVIDOR", "http://localhost/da");//carpeta raiz (la que contiene todos los archivos para el funcionamiento de la página)
 	define("RUTA_404", SERVIDOR."/not-found");
 	define("RUTA_ABOUT", SERVIDOR."/about");
-	define("RUTA_BLOG", SERVIDOR."/blog");
+	define("RUTA_BLOG", SERVIDOR."/newsletter");
 	define("RUTA_OFFLINE", SERVIDOR."/servicio-offline");
 	define("RUTA_ONLINE", SERVIDOR."/servicio-online");
 	define("RUTA_ONLINE_DESARROLLO_WEB", SERVIDOR."/servicio-desarrollo-web");
