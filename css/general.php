@@ -5,7 +5,7 @@
 ?>
 /*estilos para pc*/
 html{scroll-behavior: smooth;}
-*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 *::-moz-selection{background: <?php echo $colorMarca3;?>;color: #0d0d0d;}
 *::selection {background: <?php echo $colorMarca3;?>;color: #0d0d0d;}
 body{font-family: <?php echo $textoRegular;?>;}
