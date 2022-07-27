@@ -103,7 +103,7 @@
 				<div class="d-block d-sm-none"><br><br></div>
 			</div>
 			<div class="input-field col-12">
-				<textarea id="texto" name="texto" style="min-height: 50vh;max-height:50vh;overflow-y: scroll;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500"><?php echo $entrada_recuperada -> obtener_texto(); ?></textarea>
+				<textarea id="texto" name="texto" style="min-height: 50vh;max-height:50vh;overflow-y: scroll;" class="materialize-textarea" data-length="3000" minlength="10" maxlength="3000"><?php echo $entrada_recuperada -> obtener_texto(); ?></textarea>
 				<input type="hidden" id="texto-original" name="texto-original" value="<?php echo $entrada_recuperada -> obtener_texto(); ?>">
 				<?php $validador -> mostrar_error_texto(); ?>
 				<label for="texto">Contenido</label>

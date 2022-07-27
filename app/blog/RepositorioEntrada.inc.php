@@ -464,6 +464,39 @@ class RepositorioEntradaBlog {
         return $entradas;
     }
 
+    public static function buscar_entradas_por_etiqueta($conexion, $termino_busqueda) {
+        $entradas = [];
+
+        $termino_busqueda = '%' . $termino_busqueda . '%';
+
+        if (isset($conexion)) {
+            try {
+
+                $sql = "SELECT * FROM blog WHERE etiqueta LIKE :busqueda ORDER BY fecha DESC LIMIT 25";
+
+                $sentencia = $conexion -> prepare($sql);
+
+                $sentencia -> bindParam(':busqueda', $termino_busqueda, PDO::PARAM_STR);
+                $sentencia -> execute();
+                $resultado = $sentencia -> fetchAll();
+
+                if (count($resultado)) {
+                    foreach ($resultado as $fila) {
+                        $entradas[] = new EntradaBlog(
+                            $fila['id'], $fila['autor_id'], $fila['url'], $fila['imagen'], $fila['url_externa'], $fila['titulo'],
+                                $fila['texto'], $fila['etiqueta'], $fila['fecha'], $fila['activa']
+                        );
+                    }
+                }
+
+            } catch(PDOException $ex) {
+                print 'ERROR ' . $ex -> getMessage();
+            }
+        }
+
+        return $entradas;
+    }
+
     public static function buscar_entradas_por_autor($conexion, $termino_busqueda) {
         $entradas = [];
 

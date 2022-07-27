@@ -3,13 +3,14 @@
 include_once 'app/blog/EscritorEntradas.inc.php';
 include_once 'app/blog/RepositorioEntrada.inc.php';
 
+
 $busqueda = null;
 $resultados = null;
 
 $buscar_titulo = true;
 $buscar_contenido = true;
-$buscar_tags = false;
-$buscar_autor = false;
+$buscar_tags = true;
+$buscar_autor = true;
 
 $ordenar_antiguas = false;
 
@@ -63,7 +64,7 @@ if (isset($_POST['busqueda_avanzada']) && isset($_POST['campos'])) {
 		}
 
 		if ($buscar_tags) {
-			//añadir tags cuando existan
+			$entradas_por_etiqueta = RepositorioEntradaBlog::buscar_entradas_por_etiqueta(Conexion::obtener_conexion(),  $busqueda, $orden);
 		}
 
 		if ($buscar_autor) {
@@ -89,11 +90,10 @@ include_once 'seccion/doc-navbar.inc.php';
 
 <div class="container">
 	<div class="col-12">
-		<div class="row" style="padding: 10em 0 1.5em 0;" align="center">
+		<div class="row" style="padding: 3em 0 1.5em 0;">
 		    <div class="col-1 d-block d-sm-none"></div>
 		    <div class="col-10 col-md-6">
-		    	<br>
-		        <p class="textoBlack textoTitulo"><?php echo $titulo; ?></p> 
+		        <p class="textoBlack textoTitulo" style="font-size: 2em"><?php echo $titulo; ?></p> 
 		    </div>    
 		    <div class="col-1 col-md-1"></div>	        
 		    
@@ -114,12 +114,6 @@ include_once 'seccion/doc-navbar.inc.php';
 		<div class="row">		
 			<?php
 			if (isset($_POST['termino-buscar-blog']) && count((array)$resultados)) {
-				?>
-			<div class="col-12">
-				<p align="left"><?php echo "Aquí tenemos ".count($resultados)." resultado(s) para tu búsqueda";?></p>
-				<hr>			
-			</div>
-				<?php
 			} //COMPROBAR RESULTADOS EN BÚSQUEDA MÚLTIPLE
 			if (isset($_POST['buscar-blog'])) {
 				if(count((array)$resultados)) {
@@ -134,12 +128,12 @@ include_once 'seccion/doc-navbar.inc.php';
 			<div class="col-2"></div>
 			<div class="col-8 section2 center-align valign-wrapper">
 				<div class="col-12">
-					<p class="textoBlack textoTitulo1">
-						Lo sentimos
+					<p class="textoBlack" style="font-size:1.5em; line-height: 1.2em;">
+						No encontramos coincidencias
 					</p>
 					<br>
 					<p class="textoBook textoParrafo">
-						No encontramos coincidencias. Intenta buscar nuevamente usando otras palabras o vuelve atrás tocando el botón de abajo.
+						Intenta buscar nuevamente usando otras palabras o vuelve atrás tocando el botón de abajo.
 					</p>
 					<br><br>
 					<a class="btn btn-secundario-animado" href="<?php echo RUTA_BLOG; ?>">Volver atrás</a>
@@ -169,6 +163,7 @@ include_once 'seccion/doc-navbar.inc.php';
 											EscritorEntradasBlog::mostrar_entradas_busqueda_multiple($entradas_por_contenido);
 												break;
 											case "tags":
+											EscritorEntradasBlog::mostrar_entradas_busqueda_multiple($entradas_por_etiqueta);
 												break;
 											case "autor":
 												EscritorEntradasBlog::mostrar_entradas_busqueda_multiple($entradas_por_autor);
@@ -187,11 +182,11 @@ include_once 'seccion/doc-navbar.inc.php';
 							<div class="col-8 section2 center-align valign-wrapper">
 								<div class="col-12">
 									<p class="textoBlack textoTitulo1">
-										Lo sentimos
+										No encontramos coincidencias
 									</p>
 									<br>
 									<p class="textoBook textoParrafo">
-										No encontramos coincidencias. Intenta buscar nuevamente usando otras palabras o vuelve atrás tocando el botón de abajo.
+										Intenta buscar nuevamente usando otras palabras o vuelve atrás tocando el botón de abajo.
 									</p>
 									<br><br>
 									<a class="btn btn-secundario-animado" href="<?php echo RUTA_BLOG; ?>">Volver atrás</a>

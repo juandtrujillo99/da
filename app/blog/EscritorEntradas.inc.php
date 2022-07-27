@@ -109,7 +109,11 @@ class EscritorEntradasBlog {
                     </div>
                 </div> 
                 <div class="card-content" style="padding:.2em 0;">
-                    <p class="textoBookBold textoParrafo1"><?php echo EscritorEntradasBlog::resumir_titulo(nl2br($entrada -> obtener_titulo())); ?></p>
+                    <p>
+                        <b><?php echo $entrada->obtener_id();?></b>
+                        <?php echo EscritorEntradasBlog::resumir_texto(nl2br($entrada -> obtener_texto())); ?>
+                        <font color="grey">Ver más</font>
+                    </p>
                 </div>         
             </div>
         </a>

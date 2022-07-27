@@ -45,7 +45,7 @@
 				<div class="d-block d-sm-none"><br><br></div>
 			</div>
 			<div class="input-field col-12">
-			<textarea id="texto" name="texto" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" class="materialize-textarea" data-length="1500" minlength="10" maxlength="1500"></textarea>
+			<textarea id="texto" name="texto" style="min-height: 30vh;max-height: 60vh;overflow-y: scroll;" class="materialize-textarea" data-length="3000" minlength="10" maxlength="3000"></textarea>
 				<label for="texto">¿Qué deseas compartir?</label>
 				<p>
 					<input id="bold" type="button" value="B" class="btn btn-principal tooltipped" data-position="bottom" data-tooltip="Negrita"> 
