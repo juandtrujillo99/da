@@ -101,7 +101,7 @@ class EscritorEntradasBlog {
             return;
         }
         ?>
-        <a href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-12 col-md-3" style="padding:.5em">
+        <a target="_blank" href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-12 col-md-3" style="padding:.5em">
             <div class="row card" style="background-color: white;color: black;box-shadow: none;border: 0;">
                 <div class="card-image">                    
                     <div align="center">   
@@ -110,7 +110,6 @@ class EscritorEntradasBlog {
                 </div> 
                 <div class="card-content" style="padding:.2em 0;">
                     <p>
-                        <b><?php echo $entrada->obtener_id();?></b>
                         <?php echo EscritorEntradasBlog::resumir_texto(nl2br($entrada -> obtener_texto())); ?>
                         <font color="grey">Ver más</font>
                     </p>
@@ -125,7 +124,7 @@ class EscritorEntradasBlog {
             return;
         }
         ?>
-        <a href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-12 col-md-3" style="padding:.5em">
+        <a target="_blank" href="<?php echo RUTA_ENTRADA_BLOG . '/' . $entrada -> obtener_url() ?>" class="col-12 col-md-3" style="padding:.5em">
             <div class="row card" style="background-color: white;color: black;box-shadow: none;border: 0;">
                 <div class="card-image">                    
                     <div align="center">   
@@ -133,7 +132,10 @@ class EscritorEntradasBlog {
                     </div>
                 </div> 
                 <div class="card-content" style="padding:.2em 0;">
-                    <p class="textoBookBold textoParrafo1"><?php echo EscritorEntradasBlog::resumir_titulo(nl2br($entrada -> obtener_titulo())); ?></p>
+                    <p>
+                        <?php echo EscritorEntradasBlog::resumir_texto(nl2br($entrada -> obtener_texto())); ?>
+                        <font color="grey">Ver más</font>
+                    </p>
                 </div>         
             </div>
         </a>
