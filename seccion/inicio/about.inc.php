@@ -1,4 +1,4 @@
-<div class="d-none d-sm-block bggrey" id="about">
+<div class="d-none d-sm-block service1" id="about">
 	<div class="col-12">
 		<h2 align="center" class="textoBlack" style="font-size: 4em;margin-top: 1em;margin-bottom: .8em;">Sobre mi</h2>
 	</div>
@@ -12,14 +12,14 @@
 			        <p style="font-size: 1em;">Soy Juan, diseñador, community manager y creador de contenidos especializado en marketing para el sector del fitness y el deporte.</p>
 			    </div>
 			    <div class="col-5">
-			    	<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/1.webp)"></div>
+			    	<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>website-dareads.webp)"></div>
 			    </div>
 			</div>
 			<div class="col-12" style="margin-top: 4em"></div>
 			<div class="col-1"></div>
 			<div class="col-11 row bordeadoRojo anime-4">
 			    <div class="col-5">
-			    	<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/2.webp)"></div>
+			    	<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami3.webp)"></div>
 			    </div>
 				<div class="col-7" style="padding: 3.8em 8em;">
 			        <h6 class="texto2Black" style="font-size: 1.3em;">¿Desde cuando?</h6>
@@ -35,7 +35,7 @@
 		<div class="col-10 row">
 			<div class="col-3 anime-1">
 				<br><br><br>
-			    <img loading="lazy" src="<?php echo RUTA_IMG;?>fondos/3.webp" class="imagen">
+			    <img loading="lazy" src="<?php echo RUTA_IMG_OPTIMIZADA;?>whoami.webp" class="imagen">
 			    <br><br><br>
 			</div>
 			<div class="col-9 row about1 anime-1a">
@@ -60,8 +60,8 @@
 				</div>
 				<div class="col-1"></div>
 				<div class="col-11" align="center">
-					<br><br>
-					<a href="<?php echo RUTA_ABOUT;?>" class="btn btn-principal-animado" style="font-size: 1.5em;">Aún no me convences, quiero saber más</a>
+					<br><br><br>
+					<a href="<?php echo RUTA_ABOUT;?>" class="btn btn-secundario-animado" style="font-size: 1.5em;">Quiero saber más</a>
 				</div>
 			</div>
 		</div>
@@ -75,28 +75,28 @@
 		<div class="col-12 anime-1">
         	<div class="slider">
 				<ul class="slides" style="background-color: black;">
-					<li>
-						<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/1.webp)"></div>
-					</li>
 					<li class="col-12">
-						<div class="bg-cover" style="opacity: 50%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/1.webp)"></div>
-						<div class="caption">
-							<h6 class="textoBlack" style="font-size:2em;padding: 1em 0;">¿Quién soy?</h6>
-							<p class="light grey-text text-lighten-3" style="font-size: 1.2em;">Soy Juan, diseñador, community manager y creador de contenidos especializado en marketing para el sector del fitness y el deporte.</p>
-						</div>
-					</li>
-					<li class="col-12">
-						<div class="bg-cover" style="opacity: 50%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/2.webp)"></div>
+						<div class="bg-cover" style="opacity: 30%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>website-dareads.webp)"></div>
 						<div class="caption center-align">
 							<h6 class="textoBlack" style="font-size:2em;padding: 1em 0;">¿Desde cuando?</h6>
 							<p class="light grey-text text-lighten-3" style="font-size: 1.2em;">Desde hace más de 6 años vengo preparándome con diferentes proyectos que me han permitido perfeccionar mis habilidades.</p>
 						</div>
 					</li>
 					<li class="col-12">
-						<div class="bg-cover" style="opacity: 50%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG;?>fondos/3.webp)"></div>
+						<div class="bg-cover" style="opacity: 30%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami3.webp)"></div>
 						<div class="caption center-align">
 							<h6 class="textoBlack" style="font-size:2em;padding: 1em 0;">¿Por qué deberías contactarme?</h6>
 							<p class="light grey-text text-lighten-3" style="font-size: 1.2em;">Porque creo que los colores, las formas, el orden y los calendarios pueden ayudar a cualquiera a crecer y ser los mejores en su campo.</p>
+						</div>
+					</li>
+					<li>
+						<div class="bg-cover" style="width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami.webp)"></div>
+					</li>
+					<li class="col-12">
+						<div class="bg-cover" style="opacity: 30%;width: 100%;height: 100%;background-image:url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami.webp)"></div>
+						<div class="caption">
+							<h6 class="textoBlack" style="font-size:2em;padding: 1em 0;">¿Quién soy?</h6>
+							<p class="light grey-text text-lighten-3" style="font-size: 1.2em;">Soy Juan, diseñador, community manager y creador de contenidos especializado en marketing para el sector del fitness y el deporte.</p>
 						</div>
 					</li>
 				</ul>

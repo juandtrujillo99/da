@@ -3,7 +3,7 @@
 	<div class="col-1"></div>
 	<div class="col-10 row" align="center">
 		<div class="col-12 row">
-			<h2 class="texto2Black d-none d-sm-block" style="font-size: 1.5em;margin-top: 5%;position: relative;letter-spacing: .2em;">Escoge un paquete</h2>
+			<h2 class="texto2Black d-none d-sm-block" style="font-size: 1.5em;padding: 2em 0;position: relative;letter-spacing: .1em;">Escoge un paquete</h2>
 		</div>
 		<div class="col-12 row">
 			<div class="col-1"></div>
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-12"><br></div>
+	<div class="col-12"><br><br></div>
 </div>
 
 

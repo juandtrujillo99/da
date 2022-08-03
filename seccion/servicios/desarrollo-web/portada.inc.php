@@ -1,5 +1,5 @@
 <div class="d-none d-sm-block">
-	<div class="col-12 row section service1">	
+	<div class="col-12 row section">	
 		<div class="col-6 row">
 			<div class="col-12 row"></div>
 			<div class="col-2"></div>

@@ -1,6 +1,6 @@
 <div class="d-none d-sm-block" id="opiniones">
 	<div class="col-12 row section opiniones">
-		<div class="col-12 bggrey" style="padding: 6em 0;">
+		<div class="col-12 service1" style="padding: 6em 0;">
 			<h2 align="center" class="textoBlack" style="font-size: 4em;">Lo que dicen mis clientes</h2>
 		</div>
 		<div class="col-1"></div>

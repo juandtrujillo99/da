@@ -1,5 +1,5 @@
 <div class="d-none d-sm-block" id="servicios">
-	<div class="col-12 row service1" style="background-color: #000;">	
+	<div class="col-12 row service1">	
 		<div class="col-12" style="margin-top: 4vh;"></div>	
 		<div class="col-1"></div>
 		<div class="col-3 section center-align valign-wrapper">
@@ -18,8 +18,7 @@
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Offline</h5>
-				        <h6 class="texto2Black">(Diseño Digital)</h6>
-				        <p>Te ayudo a diseñar el Logo ideal, tarjetas de presentación o invitaciones y folletos publicitarios.</p>
+				        <p>Logos y folletos publicitarios.</p>
 				    </div>
 				</div>
 			</a>
@@ -30,8 +29,7 @@
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Online</h5>
-				        <h6 class="texto2Black">(Administración)</h6>
-				        <p>Puedo crearte un sitio web único y muy atractivo para potenciar tu marca o si prefieres puedo gestionar las redes sociales y te enseño a pautar online.</p>
+				        <p>Sitios web y gestión de redes sociales.</p>
 				    </div>
 				</div>
 			</a>
@@ -42,8 +40,7 @@
 				    </div>
 					<div class="col-12">
 				        <h5 class="textoBlack">Packs</h5>
-				        <h6 class="texto2Black">(Social media)</h6>
-				        <p>¿No sabes qué vas a publicar mañana? Déjamelo a mi, yo me encargo de crear el contenido y tu solo lo publicas.</p>
+				        <p>Contenido listo para publicar.</p>
 				    </div>
 				</div>
 			</a>
@@ -54,10 +51,10 @@
 
 
 
-<div class="d-block d-sm-none" id="servicios-m" style="background-color: #f1f1f1; color: 000;padding: 3em 0;margin-top: 2em;">
+<div class="d-block d-sm-none" id="servicios-m" style="padding-top: 3em;">
 	<div class="col-12 row service1">
 		<div class="col-12 anime-1">
-			<h2 class="textoBlack" style="font-size: 2.5em;margin-left: .6em;margin-top: .5em;margin-bottom: .5em;">¿Cómo empezamos?</h2>
+			<h2 class="textoBlack"  style="font-size: 2.2em;padding: 1.5em .5em .2em .5em;">Si estás aquí es porque necesitas soluciones</h2>
 		</div>
 		<div class="col-12 anime-1a">
 			<div class="card">
@@ -75,7 +72,7 @@
 							<br><br>
 							<p style="font-size:1.2em;" class="textoBold">Te ayudo a diseñar el Logo ideal, tarjetas de presentación o invitaciones y folletos publicitarios.</p>
 							<br>
-							<p class="btn btn-principal-animado">Saber más</p>
+							<p class="btn btn-secundario-animado">Saber más</p>
 						</div>
 					</a>
 					<a href="<?php echo RUTA_PACKS;?>">
@@ -84,7 +81,7 @@
 							<br><br>
 							<p style="font-size:1.2em;" class="textoBold">¿No sabes qué vas a publicar mañana? Déjamelo a mi, yo me encargo de crear el contenido y tú lo publicas.</p>
 							<br>
-							<p class="btn btn-principal-animado">Saber más</p>
+							<p class="btn btn-secundario-animado">Saber más</p>
 						</div>
 					</a>
 					<a href="<?php echo RUTA_ONLINE;?>">
@@ -93,7 +90,7 @@
 							<br><br>
 							<p style="font-size:1.2em;" class="textoBold">Puedo crearte un sitio web único y muy atractivo para potenciar tu marca o si prefieres puedo gestionar las redes sociales y te enseño a pautar online.</p>
 							<br>
-							<p class="btn btn-principal-animado">Saber más</p>
+							<p class="btn btn-secundario-animado">Saber más</p>
 						</div>
 					</a>
 			    </div>

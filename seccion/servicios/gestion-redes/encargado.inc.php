@@ -3,7 +3,7 @@
 		<div class="col-1"></div>
 		<div class="col-5 row section valign-wrapper">
 			<div class="col-10">
-				<img src="<?php echo RUTA_IMG_OPTIMIZADA; ?>gestion-redes.webp" class="imagen">
+				<img src="<?php echo RUTA_IMG_OPTIMIZADA; ?>gestion-redes.webp" class="imagen-2">
 				<h6 class="textoBlack" style="font-size: 3em;padding-top:1em;">¡Tu mandas!</h6>
 				<p style="font-size: 1em;">
 					Supervisar jamás fue tan sencillo, yo me encargaré de todo lo demás.

@@ -3,7 +3,7 @@
 		<div class="col-1"></div>
 		<div class="col-6 section" style="padding: 5em 0;">
 			<div class="sqrRojoStriped anime-3" style="left: -2.5em;top:1em;z-index: 2;position: relative;"></div>
-			<div class="col-12 row bordeadoNegro anime-3" style="background-color: white;position: relative;bottom: 12em;">		
+			<div class="col-12 row bordeadoNegro anime-3" style="background-color: white;position: relative;bottom: 12em;">	
 				<div class="col-2"></div>
 				<div class="col-8" style="padding: 10em 0;">
 					<h6 class="textoBlack" style="font-size: 3em;">Compatibilidad con todos los navegadores web</h6>

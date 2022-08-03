@@ -3,7 +3,7 @@
 		<div class="col-md-2 col-1"></div>
 		<div class="col-md-2 d-none d-sm-block">
 			<img src="<?php echo RUTA_IMG; ?>logo/1.png" class="imagen-2">
-			<p style="padding-top: 2em;">Colores, orden y calendarios para crecer en el mundo digital.</p>
+			<p style="padding-top: 1.2em;">Colores, orden y calendarios para crecer en el mundo digital.</p>
 		</div>
 		<div class="col-1"></div>
 		<div class="col-md-3 col-10 row contacto">

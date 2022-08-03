@@ -129,17 +129,17 @@ include_once 'seccion/doc-navbar.inc.php';
 			    </div>
 			</div>
 			<div class="col-12 about2">
-				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG;?>fondos/1.webp);">
+				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami.webp);">
 					<div align="center" class="texto-contenido4 white-text">
 						<h6 class="texto2Black">Obtén un servicio de excelente calidad al mejor precio.</h6>
 					</div>
 				</div>
-				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG;?>fondos/2.webp);">				
+				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG_OPTIMIZADA;?>website-dareads.webp);">				
 					<div align="center" class="texto-contenido4 white-text">
 						<h6 class="texto2Black">Consigue que tu marca se destaque del montón.</h6>
 					</div>
 				</div>
-				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG;?>fondos/3.webp);">
+				<div class="anime-3 paralelograma" style="background-image: url(<?php echo RUTA_IMG_OPTIMIZADA;?>whoami3.webp);">
 					<div align="center" class="texto-contenido4 white-text">
 						<h6 class="texto2Black">Incrementa tus posibilidades de llegar a un público más amplio.</h6>
 					</div>
@@ -174,9 +174,9 @@ include_once 'seccion/doc-navbar.inc.php';
 		        <div class="col-1"></div>
 		        <div class="col-10">
 		            <br>
-		            <p class="bordeadoRojo anime-3" style="font-size: 1.3em; padding:2em; margin-top: -3em;position: relative;">Me apasiona crear contenido digital para redes sociales de gimnasios y preparadores físicos porque el ejercicio me cambió la vida. Combinar mis dos amores me mantiene motivado trabajando sin sentir que lo estoy haciendo.
+		            <p class="bordeadoNegro anime-3" style="font-size: 1.3em; padding:2em; margin-top: -3em;position: relative;background-color: white;">Me apasiona crear contenido digital para redes sociales de gimnasios y preparadores físicos porque el ejercicio me cambió la vida. Combinar mis dos amores me mantiene motivado trabajando sin sentir que lo estoy haciendo.
 		            <br><br>
-		            <b>- Juan David, Diseñador, community manager y creador de contenido.</b>
+		            <b>- Juan David, Diseñador y creador de contenido.</b>
 		            </p>
 			    </div>
 			</div>

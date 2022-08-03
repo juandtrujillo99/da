@@ -5869,7 +5869,6 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: .2em 0 1em 2.5em;
-  color: <?php echo $colorMarca2;?>;
 }
 
 .sidenav .collapsible,

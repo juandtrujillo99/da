@@ -6,8 +6,8 @@
 /*estilos para pc*/
 html{scroll-behavior: smooth;}
 *{margin: 0;padding: 0;box-sizing: border-box;}
-*::-moz-selection{background: <?php echo $colorMarca3;?>;color: #0d0d0d;}
-*::selection {background: <?php echo $colorMarca3;?>;color: #0d0d0d;}
+*::-moz-selection{background: <?php echo $colorMarca;?>;color: <?php echo $colorMarca4;?>;}
+*::selection {background: <?php echo $colorMarca;?>;color: <?php echo $colorMarca4;?>;}
 body{font-family: <?php echo $textoRegular;?>;}
 /*barra de scroll*/
 body::-webkit-scrollbar {width: 6px;background: <?php echo $colorMarca;?>;}
@@ -61,7 +61,8 @@ background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMa
 background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMarca;?> 50%, <?php echo $colorMarca;?> 100%);}
 
 .btn-principal-animado{
-  box-shadow: inset 0px 0px 0px 4px <?php echo $colorMarca;?>;line-height: 1.5em;padding: 0.5em 2em; text-transform: uppercase; font-family:<?php echo $texto2Black?>;
+  border: .2em solid <?php echo $colorMarca;?>;
+  line-height: 1.5em;padding: 0.5em 2em; text-transform: uppercase; font-family:<?php echo $texto2Black?>;
   color: #0d0d0d;
   background-image: transparent 50%;  
   background-size: 200%;
@@ -74,16 +75,17 @@ background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMa
 
 
 .btn-secundario-animado{
-  box-shadow: inset 0px 0px 0px 4px #fff;
-  color: #fff;
+  box-shadow: 0px 0px 20px 0px <?php echo $colorMarca;?>;border: .2em solid <?php echo $colorMarca2;?>;
+  line-height: 1.5em;padding: 0.5em 2em; text-transform: uppercase; font-family:<?php echo $texto2Black?>;
+  color: <?php echo $colorMarca4;?>;
   background-image: transparent 50%;  
   background-size: 200%;
   background-position: 0% 50%;
   transition: .3s;
   border-radius: 0;}
-.btn-secundario-animado:hover, .btn-principal-animado:active{color: #0d0d0d;
+.btn-secundario-animado:hover, .btn-secundario-animado:active{color: <?php echo $colorMarca4;?>;box-shadow: inset 0px 0px 0px 4px <?php echo $colorMarca2;?>;
   background-position: 100% 50%;transition: .4s;
-background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMarca;?> 50%, <?php echo $colorMarca;?> 100%);}
+background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMarca2;?> 50%, <?php echo $colorMarca2;?> 100%);}
 
 
 .imagen{max-width: 100%;width: 100%}
@@ -95,19 +97,28 @@ background-image: linear-gradient(to right, transparent 50%, <?php echo $colorMa
 .imagenh{max-height: 100%;height: 100%}
 
 .sqrRojoStriped{background-image: linear-gradient(
-    45deg, <?php echo $colorMarca?> 25%, #ffffff 25%, #ffffff 50%, <?php echo $colorMarca?> 50%, <?php echo $colorMarca?> 75%, #ffffff 75%, #ffffff 100%);
+    45deg, <?php echo $colorMarca?> 25%, <?php echo $colorMarca4;?> 25%, <?php echo $colorMarca4;?> 50%, <?php echo $colorMarca?> 50%, <?php echo $colorMarca?> 75%, <?php echo $colorMarca4;?> 75%, <?php echo $colorMarca4;?> 100%);
     background-size: 28.28px 28.28px;width: 20em;height: 15em; position: absolute;right: 6em;z-index: 1}
 .sqrBlack{background-color: #0d0d0d;background-size: 10px 10px;width: 15em;height: 10em; position: absolute;z-index: 1}
 .bordeRojo{box-shadow: -35px -45px 0px 0px <?php echo $colorMarca; ?>;}
 .bordeRojoIzq{border-left: .2em solid <?php echo $colorMarca; ?>; padding-left: .5em;}
 .bordeRojoIzq2{border-left: .1em solid <?php echo $colorMarca; ?>; padding-left: .2em;}
 .bordeRojoAba{border-bottom: .5em solid <?php echo $colorMarca; ?>;max-width: 4em}
-.bordeadoNegro{box-shadow: 0 0 0 .5em <?php echo $colorMarca2; ?>; background: white; z-index: 2;transition: .3s;}
-.bordeadoNegro2{box-shadow: 0 0 0 .5em <?php echo $colorMarca2; ?>; background: white; z-index: 2;transition: .3s ease;}
-.bordeadoNegro2:hover{background-color: <?php echo $colorMarca; ?>;color: white;transition: .3s ease;}
-.bordeadoBlanco{box-shadow: 0 0 0 .5em #fff; background: transparent; z-index: 2;color: white;}
+.bordeadoNegro{
+  border: .4em solid <?php echo $colorMarca;?>;
+   background-color:<?php echo $colorMarca3; ?>; z-index: 2;transition: .3s;
+ }
+.bordeadoNegro2{
+  box-shadow: 0px 0px 20px 0px <?php echo $colorMarca;?>;border: .2em solid <?php echo $colorMarca2;?>;
+   background-color:<?php echo $colorMarca3; ?>; z-index: 2;transition: .3s ease;
+ }
+.bordeadoNegro2:hover{background-color: <?php echo $colorMarca4; ?>;color: <?php echo $colorMarca3; ?>;transition: .3s ease;}
+.bordeadoBlanco{
+  box-shadow: 0px 0px 20px 0px <?php echo $colorMarca4;?>;border: .2em solid <?php echo $colorMarca4;?>;
+  background: transparent; z-index: 2;color: white;
+}
 .bordeadoBlanco2{border: .2em solid white; background: transparent;color: white;padding: 6em 0; align-items: center;vertical-align: center;}
-.bordeadoRojo{box-shadow: 0 0 0 .2em <?php echo $colorMarca; ?>; z-index: 2;}
+.bordeadoRojo{box-shadow: 0px 0px 20px 0px <?php echo $colorMarca;?>;border: .2em solid <?php echo $colorMarca;?>; z-index: 2;}
 h1{text-transform: uppercase;}
 h2{text-transform: uppercase;}
 h3{text-transform: uppercase;}
@@ -116,9 +127,8 @@ h5{text-transform: uppercase;}
 h6{text-transform: uppercase;}
 .bg{background-repeat: none;background-position: center;background-attachment: fixed;background-size: cover;}
 .bg2{background-position: center;background-attachment:absolute;background-size: cover;}
-.bggrey{background-color: #f1f1f1;}
+.bggrey{background-color: <?php echo $colorMarca3a;?>;color: <?php echo $colorMarca3;?>;}
 .bggrey .collapsible-header{padding: 1em 0;}
-.bggrey2{background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);}
 
 
 /*Sobre nosotros en la pagina de inicio*/
@@ -138,27 +148,32 @@ h6{text-transform: uppercase;}
 
 /*Nuestros servicios en la pagina de inicio*/
 .service1 .bordeadoNegro div, .service1 .bordeadoNegro2 div{padding: .5em 2em 2.5em 2em;}
-.service1 .bordeadoNegro div p, .service1 .bordeadoNegro2 div p{font-size: .8em; line-height: 1.2em;}
+.service1 .bordeadoNegro div p, .service1 .bordeadoNegro2 div p{font-size: 1.2em; line-height: 1.2em;}
 
 .service1 .div1{top: 27%;position: relative;padding: 0 1em;}
 .service1 h5{font-size: 2em; position: relative;}
-.service1 a{color:<?php echo $colorMarca2?>;}
+.service1 a{color:<?php echo $colorMarca4?>;}
+.service1 {background-color:<?php echo $colorMarca3?>;color:<?php echo $colorMarca4?>;}
+.service1 .card{background-color:<?php echo $colorMarca3?>;}
+.service1 .card .tabs{background-color:<?php echo $colorMarca3?>;color: <?php echo $colorMarca4?>;}
+.service1 .card .tab a:focus, .service1 .card .tab a:focus.active {background-color: <?php echo $colorMarca3?>;}
+.service1 .card .tab a.active{color: <?php echo $colorMarca4?>;}
 
 .tareas{padding: 2em 0;}
 .tareas div{padding: 1.2em 0;}
 .tareas span{padding: 0 .5em;position: relative;top: 15%;color: <?php echo $colorMarca?>;}
 .tareas p{padding: 0 .5em;position: relative;top: .2em;font-family: <?php echo $texto2Black;?>;text-transform: uppercase;}
 
-.pack a{color: <?php echo $colorMarca2;?>}
+.pack a{color: <?php echo $colorMarca3;?>}
 .pack .paquete{padding: 1em;transition: ease 1s;}
 .pack .paquete:hover{box-shadow: 0 0 0 .2em <?php echo $colorMarca; ?>;padding: 1em;transition: ease 1s;}
 .pack h6{font-family: <?php echo $texto2Black;?>;padding: 1.5em 0 0 0;font-size: 1.3em;}
-.pack p{font-family: <?php echo $texto2Black;?>;text-transform: uppercase;color: #c9c9c9;font-size: 1.2em}
+.pack p{font-family: <?php echo $texto2Black;?>;text-transform: uppercase;color: <?php echo $colorMarca3; ?>;font-size: 1.2em}
 
 .otros-productos {margin-top: 5em;margin-bottom: 5em;}
 .otros-productos .producto:hover{}
 .otros-productos h5{text-align: center;font-size: 2em;padding-bottom: 1em;}
-.otros-productos a{padding: 2em 0;border-bottom: .5em solid transparent;color:<?php echo $colorMarca2;?>;}
+.otros-productos a{padding: 2em 0;border-bottom: .5em solid transparent;color:<?php echo $colorMarca3;?>;}
 .otros-productos a:hover{border-bottom: .5em solid <?php echo $colorMarca; ?>;color:<?php echo $colorMarca;?>;}
 .otros-productos a span{display: inline-block;font-size: 4em;position: relative;top: 1.7vh;}
 .otros-productos a p{display: inline-block;font-size: 2em;position: relative;padding-left: .5em}
@@ -168,7 +183,7 @@ h6{text-transform: uppercase;}
 .opiniones span{color:#fab919;}
 .opiniones h5{color: <?php echo $colorMarca?>; font-size: 1.5em; position: relative;}
 .opiniones h6{font-size: 1.2em; position: relative;}
-.opiniones a{color:<?php echo $colorMarca2?>;}
+.opiniones a{color:<?php echo $colorMarca3?>;}
 .opiniones .contenedor{background-color: #f1f1f1;padding: 2em 0;border-radius: .5em;}
 .opiniones img{box-shadow: 0px 2px 16px -3px rgba(0,0,0,9);}
 .opiniones .img{padding: 1em;}
@@ -191,8 +206,8 @@ h6{text-transform: uppercase;}
 .contact2-m {margin-top: 15vh;padding-bottom: 10vh;}
 
 .footer{padding: 2em 0;}
-.footer .contacto a{color: <?php echo $colorMarca2?>;font-family:<?php echo $textoBold;?>;}
-.footer .contacto i{font-size: 3em;padding: 0 .2em;color: <?php echo $colorMarca2?>;}
+.footer .contacto a{color: <?php echo $colorMarca3?>;font-family:<?php echo $textoBold;?>;}
+.footer .contacto i{font-size: 3em;padding: 0 .2em;color: <?php echo $colorMarca3?>;}
 
 .social {padding: 2em 0;color: <?php echo $colorMarca2;?>;}
 .social a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca4;?>;}
