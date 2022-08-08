@@ -56,7 +56,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
             <h1 class="textoBlack"><?php echo $entrada -> obtener_titulo(); ?></h1>
             <div class="textoParrafo1a">Publicado el <?php echo convertirFecha($entrada -> obtener_fecha()); ?> por <?php echo $autor -> obtener_nombre(); ?></div>
             <br><br>
-            <p style="font-size: 1.1em;line-height: 1.8em"><?php echo nl2br($entrada -> obtener_texto()); ?></p>      
+            <p style="font-size: 1.1em;line-height: 1.5em"><?php echo nl2br($entrada -> obtener_texto()); ?></p>      
             <br><br>
             <div class="sharethis-inline-share-buttons"></div>
         </div>
@@ -75,7 +75,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
                     </p>               
                 </div>                
             </div>
-            <p style="font-size: 1.2em;padding:1.5em 0;">
+            <p style="font-size: 1em;padding:1.5em 0;">
                 <?php echo nl2br($entrada -> obtener_texto()); ?>
             </p>
             <br>

@@ -103,7 +103,7 @@
 				<div class="d-block d-sm-none"><br><br></div>
 			</div>
 			<div class="input-field col-12">
-			<textarea id="texto" name="texto" style="min-height: 10vh;max-height: 60vh;overflow-y: scroll;" class="materialize-textarea" data-length="3000" minlength="10" maxlength="3000"><?php $validador -> mostrar_texto(); ?></textarea>
+			<textarea id="texto" name="texto" style="min-height: 20vh;max-height: 30vh;overflow-y: scroll;font-size: .9em;" class="materialize-textarea" data-length="3000" minlength="10" maxlength="3000"><?php $validador -> mostrar_texto(); ?></textarea>
 				<?php $validador -> mostrar_error_texto(); ?>
 				<label for="texto">Contenido</label>
 				<p>

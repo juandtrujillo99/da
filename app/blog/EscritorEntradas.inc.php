@@ -54,7 +54,7 @@ class EscritorEntradasBlog {
             <div class="row card" style="background-color: white;color: black;box-shadow: none;border: 0;">
                 <div class="card-image">                    
                     <div align="center">   
-                        <div class="img-entrada bg-cover" style="background-image:url(<?php echo RUTA_BLOG_COVER. $entrada -> obtener_imagen(); ?>);"></div>
+                        <div loading="lazy" class="img-entrada bg-cover" style="background-image:url(<?php echo RUTA_BLOG_COVER. $entrada -> obtener_imagen(); ?>);"></div>
                     </div>
                 </div>          
             </div>
