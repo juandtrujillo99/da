@@ -10,7 +10,7 @@
 				<h6 class="texto2Black">Correo electrónico</h6>
 				<a href="<?php echo $mailEmpresa;?>?subject=Hola, Juan!" target="_blank"><p itemprop="email"><span class="material-icons">email</span> <?php echo $emailEmpresa;?></p></a>
 				<h6 class="texto2Black">Sígueme</h6>
-	          	<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $facebookEmpresa;?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
+	          	<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $githubEmpresa;?>" target="_blank"><i class="fa-brands fa-github"></i></a>
 	          	<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $instagramEmpresa;?>" target="_blank"><i class="fab fa-instagram"></i></a>
           		<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $twitterEmpresa;?>" target="_blank"><i class="fab fa-twitter-square"></i></a>
           		<a style="font-size:2.5em;padding:0 .5em" href="<?php echo $behanceEmpresa;?>" target="_blank"><i class="fab fa-behance-square"></i></a>

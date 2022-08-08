@@ -73,8 +73,12 @@ include_once 'seccion/doc-navbar.inc.php';
             </form>	
         </div> 
 	</div>
-	<div class="col-12 row" style="padding-bottom: 2em;">
-		<?php EscritorEntradasBlog::escribir_entradas(); ?>
+	<div class="row">
+		<div class="col-md-1 d-none d-sm-block"></div>
+		<div class="col-12 col-md-10 row" style="padding-bottom: 2em;">
+			<?php EscritorEntradasBlog::escribir_entradas(); ?>
+		</div>
+		<div class="col-md-1 d-none d-sm-block"></div>
 	</div>
 </div>
 
