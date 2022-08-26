@@ -20,7 +20,8 @@ include_once 'info_empresa.inc.php';
 	define("SERVIDOR", "http://localhost/da");//carpeta raiz (la que contiene todos los archivos para el funcionamiento de la página)
 	define("RUTA_404", SERVIDOR."/not-found");
 	define("RUTA_ABOUT", SERVIDOR."/about");
-	define("RUTA_BLOG", SERVIDOR."/newsletter");
+	define("RUTA_BLOG", SERVIDOR."/blog");
+	define("RUTA_GALERIA", SERVIDOR."/galeria");
 	define("RUTA_OFFLINE", SERVIDOR."/servicio-offline");
 	define("RUTA_ONLINE", SERVIDOR."/servicio-online");
 	define("RUTA_ONLINE_DESARROLLO_WEB", SERVIDOR."/servicio-desarrollo-web");
@@ -82,18 +83,26 @@ include_once 'info_empresa.inc.php';
 	define("RUTA_BUSCAR_BLOG", SERVIDOR."/buscar-blog");//busca entrada
 	define("RUTA_BUSCAR_ENTRADA_BLOG", SERVIDOR."/buscar-entrada-blog");//busca entrada
 
-
+//entradas de la galeria
+	define("RUTA_ENTRADA_GALERIA", SERVIDOR."/entrada-galeria");
+	define("RUTA_PANEL_ENTRADA_GALERIA", SERVIDOR."/panel-entrada-galeria");
+	define("RUTA_GESTOR_ENTRADAS_GALERIA", RUTA_PANEL_ENTRADA_GALERIA."/entradas-galeria");
+	define("RUTA_NUEVA_ENTRADA_GALERIA", SERVIDOR."/nueva-entrada-galeria");
+	define("RUTA_BORRAR_ENTRADA_GALERIA", SERVIDOR."/borrar-entrada-galeria");
+	define("RUTA_EDITAR_ENTRADA_GALERIA", SERVIDOR."/editar-entrada-galeria");
+	define("RUTA_BUSCAR_GALERIA", SERVIDOR."/buscar-galeria");//busca entrada
+	define("RUTA_BUSCAR_ENTRADA_GALERIA", SERVIDOR."/buscar-entrada-galeria");//busca entrada
 
 //recursos
 	define("RUTA_IMG", SERVIDOR."/assets/");
 	define("RUTA_BLOG_FILES", SERVIDOR."/assets/archivos/");
+	define("RUTA_GALERIA_FILES", SERVIDOR."/assets/archivos/");
 	define("RUTA_IMG_OPTIMIZADA", SERVIDOR."/assets/webp/");
 	define("RUTA_VIDEOS", SERVIDOR."/videos/");
 	define("RUTA_BLOG_COVER", SERVIDOR."/assets/cover/blog/");
-	define("RUTA_TIENDA_COVER", SERVIDOR."/assets/cover/tienda/");
+	define("RUTA_GALERIA_COVER", SERVIDOR."/assets/cover/galeria/");
 
 //PDFs subidos
-	define("RUTA_GUIA_TALLAS_PDF", SERVIDOR."/pdf/guia-tallas");
 	define("RUTA_EBOOK_PDF", SERVIDOR."/pdf/ebook");
 	
 	define("RUTA_CSS", SERVIDOR."/css/");

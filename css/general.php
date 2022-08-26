@@ -213,6 +213,10 @@ h6{text-transform: uppercase;}
 .social a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca4;?>;}
 .social a:hover,.social-m a:focus {color: <?php echo $colorMarca;?>;}
 
+.social {padding: 2em 0;color: <?php echo $colorMarca3;?>;}
+.social a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca3;?>;}
+.social a:hover,.social-m a:focus {color: <?php echo $colorMarca;?>;}
+
 .copyright{background-color: #262626; color: white;}
 .copyright a{color: <?php echo $colorMarca4;?>;}
 .copyright a:hover{color: <?php echo $colorMarca3;?>;}

@@ -15,6 +15,12 @@ include_once 'app/blog/Entrada.inc.php';
 include_once 'app/blog/RepositorioComentario.inc.php';
 include_once 'app/blog/Comentario.inc.php';
 
+include_once 'app/galeria/RepositorioEntrada.inc.php';
+include_once 'app/galeria/RepositorioComentario.inc.php';
+include_once 'app/galeria/Comentario.inc.php';
+include_once 'app/galeria/Entrada.inc.php';
+
+
 $componentes_url = parse_url($_SERVER['REQUEST_URI']);
 
 $ruta = $componentes_url['path'];
@@ -37,8 +43,12 @@ if($partes_ruta[0] == 'da'){
             $ruta_elegida = 'pagina/about.php';
             break;
             //pagina donde estan todas las vistas prvias del blog
-			case 'newsletter':
+			case 'blog':
 			$ruta_elegida = 'pagina/blog.php';
+			break;
+            //pagina donde estan todas las vistas prvias del blog
+			case 'galeria':
+			$ruta_elegida = 'pagina/galeria.php';
 			break;
             //servicios
 			case 'servicio-offline':
@@ -72,7 +82,9 @@ if($partes_ruta[0] == 'da'){
             $ruta_elegida = 'pagina/pack/mega.php';
             break;
 
-             case 'panel-entrada-blog':
+
+            //BLOG
+            case 'panel-entrada-blog':
 			$ruta_elegida = 'pagina/blog/gestor.php';
 			$gestor_actual = '';
 			break;
@@ -92,6 +104,29 @@ if($partes_ruta[0] == 'da'){
 			//Buscar entrada
 			case 'buscar-entrada-blog':
             $ruta_elegida = 'pagina/blog/buscar-entrada.php';
+            break;
+
+            //GALERIA
+            case 'panel-entrada-galeria':
+			$ruta_elegida = 'pagina/galeria/gestor.php';
+			$gestor_actual = '';
+			break;
+			case 'nueva-entrada-galeria':
+			$ruta_elegida = 'pagina/galeria/nueva-entrada.php';
+			break;
+			case 'editar-entrada-galeria':
+			$ruta_elegida = 'pagina/galeria/editar-entrada.php';
+			break;
+			case 'borrar-entrada-galeria':
+			$ruta_elegida = 'scripts/galeria/borrar-entrada.php';
+			break;
+			//Buscar entrada
+			case 'buscar-galeria':
+            $ruta_elegida = 'pagina/galeria/buscar.php';
+            break;
+			//Buscar entrada
+			case 'buscar-entrada-galeria':
+            $ruta_elegida = 'pagina/galeria/buscar-entrada.php';
             break;
 
             //USUARIO
@@ -243,6 +278,41 @@ if($partes_ruta[0] == 'da'){
         			break;
 			}
 		}
+
+
+		//rutas para entradas de la galeria
+		if ($partes_ruta[1] == 'entrada-galeria') {
+			$url = $partes_ruta[2];
+
+			Conexion::abrir_conexion();
+			$entrada = RepositorioEntradaGaleria :: obtener_entrada_por_url(Conexion::obtener_conexion(), $url);
+
+			if ($entrada != null) {
+				$autor = RepositorioAdmin::obtener_admin_por_id(Conexion::obtener_conexion(), $entrada -> obtener_autor_id());
+				$comentarios = RepositorioComentarioGaleria::obtener_comentarios(Conexion::obtener_conexion(), $entrada -> obtener_id());
+				$entradas_azar = RepositorioEntradaGaleria::obtener_entradas_al_azar(Conexion::obtener_conexion(), 5);//aqui se cambia el numero de entradas que se va a mostrar
+
+
+				$ruta_elegida = 'pagina/galeria/entrada.php';
+			}
+		}
+		//panel de control de las entradas, favoritos y comentarios, sirve como referencia (no tocar)
+		if ($partes_ruta[1] == 'panel-entrada-galeria') {
+			switch ($partes_ruta[2]) {
+				case 'entradas-galeria'://Debe modificarse esta direccion porque con esto es que se visualizan las entradas en el gestor
+					$gestor_actual = 'entradas-galeria';
+					$ruta_elegida = 'pagina/galeria/gestor.php';
+					break;
+				case 'comentarios':
+        			$gestor_actual = 'comentarios';
+        			$ruta_elegida = 'pagina/galeria/gestor.php';
+        			break;
+			}
+		}
+
+
+
+
 		if ($partes_ruta[1] == 'recuperacion-clave-colaborador') {
 			$url_personal = $partes_ruta[2];
 			$ruta_elegida = 'pagina/empleado/recuperacion-clave.php';

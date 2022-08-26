@@ -12,7 +12,11 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
           <br>
           <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG;?>">Gestor blog</a>
           <br>
+          <a href="<?php echo RUTA_GESTOR_ENTRADAS_GALERIA;?>">Gestor galeria</a>
+          <br>
           <a href="<?php echo RUTA_BLOG;?>">Blog</a>
+          <br>
+          <a href="<?php echo RUTA_GALERIA;?>">Galeria</a>
           <br>
           <a href="<?php echo RUTA_LOGOUT;?>">Salir</a>
         </div>
@@ -45,11 +49,13 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
             </div>
           </li>
         </ul>
-        <a href="<?php echo RUTA_ABOUT;?>">Sobre mi</a>
+        <a href="<?php echo RUTA_GALERIA;?>">Galeria</a>
         <br>
         <a href="<?php echo RUTA_BLOG;?>">Blog</a>
         <br>
         <a href="<?php echo SERVIDOR;?>#contacto">Contacto</a>
+        <br>
+        <a href="<?php echo RUTA_ABOUT;?>">Acerca de</a>
         <br><br>
         <p style="color: white;font-size: 1.2em;letter-spacing: .05em;">Sígueme</p>
         <div class="col-12 row redes">
