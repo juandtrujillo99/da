@@ -105,6 +105,8 @@
     <div class="col-12 row">
     	<div class="col-md-1"></div>
     	<div class="col-md-10">
+    		<input type="hidden" name="url" value="<?php echo $entrada_recuperada -> obtener_url(); ?>">
+			<input type="hidden" id="url-original" name="url-original" value="<?php echo $entrada_recuperada -> obtener_url(); ?>">
 		    <a href="#" style="font-size: .8em;" class="textoBold btn btn-principal">Anterior</a>
 		    <button type="submit" class="btn btn-principal-animado" name="guardar_cambios_entrada">Guardar cambios</button>
 		</div>

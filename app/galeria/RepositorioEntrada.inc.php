@@ -153,7 +153,7 @@ class RepositorioEntradaGaleria {
 
         if (isset($conexion)) {
             try {
-                $sql = "SELECT * FROM galeria ORDER BY RAND() LIMIT $limite";
+                $sql = "SELECT * FROM galeria ORDER BY fecha DESC /*RAND()*/ LIMIT $limite";//esta ordenado por fecha del mas reciente al mas antiguo
 
                 $sentencia = $conexion -> prepare($sql);
                 $sentencia -> execute();

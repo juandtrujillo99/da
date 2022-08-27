@@ -106,6 +106,7 @@
     <div class="col-12 row">
     	<div class="col-md-1"></div>
     	<div class="col-md-10">
+    		<input name="url" id="url" class="d-none" <?php $validador -> mostrar_url(); ?>>
 		    <a href="#" style="font-size: .8em;" class="textoBold btn btn-principal">Anterior</a>
 		    <button type="submit" class="btn btn-principal-animado" name="guardar">Publicar</button>
 		</div>

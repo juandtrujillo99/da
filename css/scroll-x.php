@@ -10,12 +10,12 @@
   display: grid;
   gap: var(--_spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 15rem;
+  grid-auto-columns: 20rem;
 
   padding: 0 var(--_spacer) var(--_spacer);
-  border-radius: 1em;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+  background-color:<?php echo $colorMarca3;?>;
 
 }
 
@@ -44,11 +44,20 @@
 }
 
 
+.media-scroller-m .boton{
+  text-align: center;
+  background-color: <?php echo $colorMarca;?>;
+  padding: .5em .7em;
+  border-radius: 50%;
+  margin-top: 4.5em;
+  color: white;
+  width: 2.5em;
+  height: 2.5em;
+}
 
-
-
-
-
+.media-scroller-m a {
+  color: white;
+}
 
 .media-group {
   display: grid;
@@ -64,14 +73,10 @@
   padding: 1em .5em;
 }
 
-.media-element button {
-  border: 0;
-  background-color: white;
-}
 
 .media-element > img {
   inline-size: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;/*Con esto controlas el formato en que se muestra la imagen pero revisa que tengas la etiqueta img y no un div*/
   -o-object-fit: cover;
      object-fit: cover;
 }

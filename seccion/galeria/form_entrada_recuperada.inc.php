@@ -92,6 +92,8 @@
 
 <div class="checkbox">
 	<label>
+		<input type="hidden" name="url" value="<?php echo $entrada_recuperada -> obtener_url(); ?>">
+		<input type="hidden" id="url-original" name="url-original" value="<?php echo $entrada_recuperada -> obtener_url(); ?>">
 		<input type="checkbox" name="publicar" value="si" <?php if ($entrada_recuperada -> esta_activa()) echo 'checked' ?>>
 		<input type="hidden" id="publicar-original" name="publicar-original" value="<?php echo $entrada_recuperada -> esta_activa(); ?>">
 	</label>

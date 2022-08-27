@@ -3,7 +3,7 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-9 row">
 		<div class="col-12 row">
-			<div class="col-6" style="padding: 0 0 1.5em 0;">
+			<div class="col-6" style="padding: 0 1.5em;">
 				<h1 class="textoBlack textoTitulo"><?php echo $titulo ?></h1>
 			</div>
 			<div class="col-6 row">
@@ -37,7 +37,11 @@
 									<td></td>
 									<td>
 										<a target="_blank" href="<?php echo RUTA_ENTRADA_GALERIA . '/' . $entrada_actual -> obtener_url(); ?>">
-											<?php echo $entrada_actual -> obtener_fecha(); ?>																						
+											<div class="valign-wrapper">
+									            <div class="center-align">
+									                <img class="imagen-2" src="<?php echo RUTA_GALERIA_COVER. $entrada_actual -> obtener_imagen(); ?>">
+									            </div>
+									        </div>																					
 										</a>
 									</td>									
 									<td></td>	
