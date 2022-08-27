@@ -56,7 +56,7 @@ include_once 'seccion/doc-navbar.inc.php';
 	    <div class="col-1 col-md-4"></div>	        
 	    <div class="col-1"></div>
         <div class="col-10">
-            <div class="social">
+            <div class="social-2">
             	<?php include "seccion/social.inc.php";?>
             </div>
         </div>  

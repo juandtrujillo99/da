@@ -38,6 +38,11 @@ if($partes_ruta[0] == 'da'){
 	else if (count($partes_ruta) == 2) {
 		switch($partes_ruta[1]){
 
+			//pagina donde estan todas las vistas prvias del blog
+			case 'enlaces':
+			$ruta_elegida = 'pagina/linktree.php';
+			break;
+
 			//sobre nosotros
 			case 'about':
             $ruta_elegida = 'pagina/about.php';

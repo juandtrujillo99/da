@@ -53,6 +53,9 @@ include_once 'seccion/doc-navbar.inc.php';
 				    <div class="col-12 col-md-4 row textoParrafo center-align valign-wrapper">
 				        <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG; ?>" class="col-12" style="padding:.5em 0">
 				            <p class="btn-principal"><i style="padding:1em 0" class="fa-solid fa-pen-to-square"></i> Gestionar blog</p>
+				        </a>	
+				        <a href="<?php echo RUTA_GESTOR_ENTRADAS_GALERIA; ?>" class="col-12" style="padding:.5em 0">
+				            <p class="btn-principal"><i style="padding:1em 0" class="fa-solid fa-pen-to-square"></i> Gestionar Galeria</p>
 				        </a>			        
 				        <a href="<?php echo RUTA_REGISTRO_ADMIN; ?>" class="col-12" style="padding:.5em 0">
 				            <p class="btn-principal"><i style="padding:1em 0" class="fa-solid fa-user-pen"></i> Nuevo colaborador</p>

@@ -1,18 +1,14 @@
 <?php
 if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada()*/) {
   ?>
-  <div id="slide-out" class="row admon fixed sombra" style="background-color: white;color: white;width: 360px;">
+  <div id="slide-out" class="row admon fixed sombra" style="background-color: white;color: white;width: 300px;">
     <div class="col-12 row enlaces">
-      <div class="col-2"></div>
+      <div class="col-1"></div>
       <div class="col-10">
         <img class="logo" itemprop="image" alt="logo <?php echo $nombreEmpresa; ?>" src="<?php echo RUTA_IMG; ?>logo/1.png">
         <div>
           <br><br>
           <a href="<?php echo RUTA_PERFIL_ADMIN;?>">Administracion</a>
-          <br>
-          <a href="<?php echo RUTA_GESTOR_ENTRADAS_BLOG;?>">Gestor blog</a>
-          <br>
-          <a href="<?php echo RUTA_GESTOR_ENTRADAS_GALERIA;?>">Gestor galeria</a>
           <br>
           <a href="<?php echo RUTA_BLOG;?>">Blog</a>
           <br>
@@ -59,9 +55,9 @@ if(ControlSesionAdmin :: sesion_iniciada()/*&&!ControlSesion :: sesion_iniciada(
         <br><br>
         <p style="color: white;font-size: 1.2em;letter-spacing: .05em;">Sígueme</p>
         <div class="col-12 row redes">
-          <a class="col-2" href="<?php echo $facebookEmpresa;?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a class="col-2" href="<?php echo $githubEmpresa;?>" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a class="col-2" href="<?php echo $instagramEmpresa;?>" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a class="col-2" href="<?php echo $behanceEmpresa;?>" target="_blank"><i class="fab fa-behance-square"></i></a>
+          <a class="col-2" href="<?php echo $twitterEmpresa;?>" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
       </div>
     </div>

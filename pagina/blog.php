@@ -26,7 +26,7 @@ if(!ControlSesion::sesion_iniciada() && !ControlSesionAdmin::sesion_iniciada()) 
     }
 }
 
-$titulo = "Newsletter ".$nombreEmpresa;
+$titulo = "Blog ".$nombreEmpresa;
 $descripcionPagina = $descripcionNegocio;
 $imagenCompartida = RUTA_IMG_OPTIMIZADA."fondo/portada-inicio.webp";
 

@@ -213,9 +213,9 @@ h6{text-transform: uppercase;}
 .social a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca4;?>;}
 .social a:hover,.social-m a:focus {color: <?php echo $colorMarca;?>;}
 
-.social {padding: 2em 0;color: <?php echo $colorMarca3;?>;}
-.social a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca3;?>;}
-.social a:hover,.social-m a:focus {color: <?php echo $colorMarca;?>;}
+.social-2 {padding: 2em 0;color: <?php echo $colorMarca3;?>;}
+.social-2 a{font-size: 2.5em;padding: 0 .2em;color: <?php echo $colorMarca3;?>;}
+.social-2 a:hover,.social-m a:focus {color: <?php echo $colorMarca;?>;}
 
 .copyright{background-color: #262626; color: white;}
 .copyright a{color: <?php echo $colorMarca4;?>;}
@@ -284,7 +284,7 @@ h6{text-transform: uppercase;}
 .admon .enlaces .logo{max-width: 150px;}
 .admon .enlaces .redes a {font-size: 1.5em;text-decoration: none;color: <?php echo $colorMarca2;?>;}
 .admon .enlaces .redes a:hover {font-size: 1.9em;text-decoration: none;color: <?php echo $colorMarca2;?>;transition: 1s;}
-.admon .enlaces a {font-size: 1.5em;text-decoration: none;color: <?php echo $colorMarca2;?>;letter-spacing: .05em;transition: 1s;padding-left: .2em;}
+.admon .enlaces a {font-size: 1.5em;text-decoration: none;color: <?php echo $colorMarca3;?>;letter-spacing: .05em;transition: 1s;padding-left: .2em;}
 .admon .enlaces a:hover {color:<?php echo $colorMarca;?>;  padding-left: 1em;transition: 1s;}
 
 
