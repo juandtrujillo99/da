@@ -8,7 +8,7 @@
 			<a href="<?php echo RUTA_ENTRADA_GALERIA . '/' . $entrada_actual -> obtener_url() ?>">
 				<div class="media-element">					
 					<div class="img-aleatoria bg-cover" style="background-image:url(<?php echo RUTA_GALERIA_COVER. $entrada_actual -> obtener_imagen(); ?>);"></div>
-					<p><?php echo EscritorEntradasGaleria::resumir_titulo(nl2br($entrada -> obtener_texto()))?></p>					
+					<p><?php echo EscritorEntradasGaleria::resumir_titulo(nl2br($entrada_actual -> obtener_texto()))?></p>					
 				</div>
 			</a>
 			<?php

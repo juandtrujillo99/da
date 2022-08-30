@@ -34,10 +34,12 @@ $imagenCompartida = RUTA_IMG_OPTIMIZADA."fondo/portada-inicio.webp";
 
 include_once 'seccion/cabecera-inicio.inc.php';
 ?>
+<link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>cargando.css">
 <link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>recortar-imagen.css">
 <link async='async' rel="stylesheet" href="<?php echo RUTA_CSS; ?>sobreponer.css">
 <?php
 include_once 'seccion/cabecera-cierre.inc.php';
+include_once 'seccion/cargando.inc.php';
 include_once 'seccion/doc-navbar.inc.php';
 ?>
 
@@ -83,7 +85,7 @@ include_once 'seccion/doc-navbar.inc.php';
 </div>
 
 <?php //body ?>
-
+<script src="<?php echo RUTA_JS; ?>cargando.js"></script>
 <?php
 include_once 'seccion/copyright.inc.php';
 include_once 'seccion/doc-terminacion.inc.php';

@@ -32,7 +32,7 @@
     <?php //Agregar texto y contenido?>
     <div class="col-12 row valign-wrapper">
     	<div class="col-md-1"></div>
-    	<div class="col-md-10 row">
+    	<div class="col-md-10 row" style="background-color: white; z-index: 99;">
 			<div class="input-field col-12">
 			<textarea id="texto" name="texto" style="min-height: 30vh;max-height: 40vh;overflow-y: scroll;font-size: .9em;" class="materialize-textarea" data-length="3000" minlength="1" maxlength="3000"></textarea>
 				<label for="texto">¿Qué deseas compartir?</label>

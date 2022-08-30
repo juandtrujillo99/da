@@ -51,10 +51,11 @@ include_once 'seccion/cabecera-cierre.inc.php';
         <div class="col-12 col-md-4 valign-wrapper">
             <div class="section bg-cover d-none d-sm-block"></div>
             <div class="center-align">
-                <img class="sombra" style="padding: 2em;max-height: 80vh;max-width: 100%" src="<?php echo RUTA_GALERIA_COVER. $entrada -> obtener_imagen(); ?>">
+                <a href="<?php echo RUTA_GALERIA_COVER. $entrada -> obtener_imagen(); ?>">
+                    <img class="sombra" style="padding: 2em;max-height: 80vh;max-width: 100%" src="<?php echo RUTA_GALERIA_COVER. $entrada -> obtener_imagen(); ?>">
+                </a>
             </div>
         </div>
-        <?php //para pc ?>
         <div class="col-md-1 d-none d-sm-block"></div>
         <div class="col-md-5">
             <div class="d-none d-sm-block" style="padding-top: 5em;"></div>
@@ -72,7 +73,7 @@ include_once 'seccion/cabecera-cierre.inc.php';
                         </p>               
                     </div>                
                 </div>
-                <p style="font-size: 1em;padding-top:1.5em;">
+                <p style="font-size: 1.2em;padding-top:1.5em;">
                     <?php echo nl2br($entrada -> obtener_texto()); ?>
                 </p>
             </div>

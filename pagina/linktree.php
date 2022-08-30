@@ -28,6 +28,8 @@ include_once 'seccion/cabecera-cierre.inc.php';
             <div class="col-8 col-md-4">
                 <div class="bg-cover circle" style="width: 7em;height: 7em;background-position: center top;background-color: black;background-image:url(<?php echo SERVIDOR.'/assets/fotos-perfil/admin/Juan'; ?>);"></div>    
                 <br><br>
+                <p class="mayusculas textoBlack" style="font-size: 2.5em;">Juan David</p>  
+                <br> 
                 <p class="mayusculas textoBold" style="font-size: 1.1em;"><b>Escoge una opción y conoce un poco más sobre mí</b></p>               
             </div>
             <div class="col-2 col-md-4"></div>   

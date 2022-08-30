@@ -46,7 +46,7 @@ if (isset($_POST['guardar'])) {
 	}
 }
 
-$titulo = "Nueva publicacion para la galeria";
+$titulo = "Foto para la galeria";
 $descripcionPagina = $descripcionNegocio;
 $imagenCompartida = RUTA_IMG_OPTIMIZADA."fondo/portada-inicio.webp";
 
@@ -56,7 +56,7 @@ include_once 'scripts/galeria/barra-progreso-archivo-imagen.php';//script que su
 include_once 'seccion/cabecera-cierre.inc.php';
 ?>
 <div class="container-fluid">
-	<div class="d-block d-sm-none" style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1.5em;position: fixed;width: 100%;z-index: 1001;">
+	<div class="d-block d-sm-none" style="background-color: #202020;color: white;padding: .5em 1em;font-size: 1em;position: fixed;width: 100%;z-index: 1001;">
 		<div class="row">
 	        <div class="col-2">
 	            <a style="color: white;" href="<?php echo RUTA_GESTOR_ENTRADAS_GALERIA;?>"><i class="fa-solid fa-angle-left"></i></a>
